@@ -1,0 +1,365 @@
+/* TITULOS E SUBTITULOS */
+.home-title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .home-title {
+    font-size: 35px;
+    line-height: 41px;
+  }
+}
+@media (max-width: 1025px) {
+  .home-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.home-title:after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  background: var(--secondary);
+  display: block;
+  margin: 6px 0 10px 0;
+}
+
+.home-subtitle {
+  color: var(--primary);
+  font-weight: 100;
+}
+@media (min-width: 1026px) {
+  .home-subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 1025px) {
+  .home-subtitle {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+/* FIM TITULOS E SUBTITULOS */
+
+/* PLATAFORMAS */
+@media (min-width: 1026px) {
+  .platforms {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 1025px) {
+  .platforms {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.platforms-items {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (min-width: 1026px) {
+  .platforms-items {
+    justify-content: space-between;
+  }
+}
+
+.platforms-image {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.2s linear;
+}
+@media (min-width: 1026px) {
+  .platforms-image {
+    max-width: max-content;
+  }
+}
+@media (max-width: 1025px) {
+  .platforms-image {
+    max-width: 130px;
+  }
+}
+
+.platforms-image:hover {
+  filter: grayscale(0%);
+}
+/* FIM PLATAFORMAS */
+
+/* FORMULÁRIO */
+.contact {
+  background: var(--bg-secondary);
+}
+@media (min-width: 1026px) {
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 1025px) {
+  .contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.contact .content {
+  display: flex;
+  align-items: flex-start;
+}
+@media (min-width: 1026px) {
+  .contact .content {
+    gap: 50px;
+  }
+}
+@media (max-width: 1025px) {
+  .contact .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1026px) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1026px) {
+  .contact-column__text {
+    width: 35%;
+  }
+
+  .contact-column__form {
+    width: 65%;
+  }
+}
+
+.form-field {
+  border-bottom: 1px solid var(--sixth);
+  background: var(--bg-secondary);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--primary);
+  padding-bottom: 10px;
+  transition: 0.2s linear;
+}
+@media (min-width: 1026px) {
+  .form-field {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1025px) {
+  .form-field {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.form-field__textarea {
+  border-bottom: 1px solid var(--sixth);
+  background: var(--bg-secondary);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--primary);
+  width: 100%;
+  padding-bottom: 10px;
+  transition: 0.2s linear;
+}
+@media (min-width: 1026px) {
+  .form-field__textarea {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1025px) {
+  .form-field__textarea {
+    margin-bottom: 30px;
+  }
+}
+
+.form-field:focus,
+.form-field__textarea:focus {
+  border-bottom: 1px solid var(--fifth);
+}
+
+.form-field::placeholder,
+.form-field__textarea::placeholder {
+  color: var(--primary);
+}
+
+.form-button {
+  width: 100%;
+}
+
+.form-button__submit {
+  background: var(--tertiary);
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--primary);
+  width: 100%;
+  max-width: 150px;
+  padding: 16px 0 12px 0;
+  border: none;
+  font-weight: 600;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.form-button__submit:hover {
+  background: var(--fifth);
+}
+/* FIM FORMULÁRIO */
+
+/* FOOTER */
+@media (min-width: 1026px) {
+  .footer {
+    padding-top: 55px;
+    padding-bottom: 130px;
+  }
+}
+@media (max-width: 1025px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.footer-logo {
+  padding-bottom: 25px;
+}
+
+@media (min-width: 1026px) {
+  .footer-logo__text {
+    font-size: 32px;
+    line-height: 34px;
+    color: var(--primary);
+    font-family: var(--font-main);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 1025px) {
+  .footer-logo__text {
+    display: none;
+  }
+}
+
+.footer-logo__image {
+  width: 100%;
+  max-width: 192px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1025px) {
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.footer-column {
+  border-left: 2px solid var(--secondary);
+  padding: 10px;
+}
+
+.footer-text {
+  font-size: 13px;
+  line-height: 14px;
+  color: var(--primary);
+  font-style: normal;
+  transition: 0.2s linear;
+}
+
+.footer-text:hover {
+  color: var(--fifth);
+}
+
+.footer-title {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--primary);
+  font-weight: bold;
+  font-family: var(--font-main);
+  padding-bottom: 10px;
+}
+
+.footer-partners {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-partners__image {
+  width: 100%;
+  max-width: max-content;
+}
+
+.footer-column__gptw {
+  max-height: 97px;
+}
+
+.foooter-gptw__image {
+  width: 100%;
+  max-width: 67px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-social__icon:before {
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  transition: 0.2s linear;
+}
+
+.footer-social__icon:hover:before {
+  transform: scale(1.1);
+}
+
+.footer-social__facebook:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_105' data-name='Retângulo 105' width='25' height='25' transform='translate(1019 5687)' fill='%23fff' stroke='%23707070' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='icon-facebook' transform='translate(-1019 -5687)' clip-path='url(%23clip-path)'%3E%3Cg id='facebook' transform='translate(1031.5 5699.5)'%3E%3Cpath id='facebook-2' data-name='facebook' d='M10.219,4.151H12.5V.176A29.471,29.471,0,0,0,9.176,0C5.885,0,3.631,2.07,3.631,5.874v3.5H0v4.444H3.631V25H8.083V13.82h3.484l.553-4.444H8.082V6.315c0-1.284.347-2.164,2.136-2.164Z' transform='translate(-6.251 -12.5)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.footer-social__linkedin:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_106' data-name='Retângulo 106' width='25' height='25' transform='translate(1055 5687)' fill='%23fff' stroke='%23707070' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='icon-linkedin' transform='translate(-1055 -5687)' clip-path='url(%23clip-path)'%3E%3Cg id='linkedin' transform='translate(1067.5 5699.5)'%3E%3Cg id='linkedin-2' data-name='linkedin' transform='translate(-12.5 -12.5)'%3E%3Cpath id='Caminho_1686' data-name='Caminho 1686' d='M24.64,24.684h.006V15.515c0-4.485-.966-7.941-6.209-7.941a5.444,5.444,0,0,0-4.9,2.695h-.073V7.993H8.489V24.683h5.177V16.419c0-2.176.413-4.28,3.107-4.28,2.655,0,2.695,2.483,2.695,4.42v8.126Z' transform='translate(0.354 0.316)' fill='%23fff'/%3E%3Cpath id='Caminho_1687' data-name='Caminho 1687' d='M.4,7.977H5.579V24.668H.4Z' transform='translate(0.016 0.332)' fill='%23fff'/%3E%3Cpath id='Caminho_1688' data-name='Caminho 1688' d='M3,0A3.016,3.016,0,1,0,6,3,3,3,0,0,0,3,0Z' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.footer-social__instagram:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_107' data-name='Retângulo 107' width='25' height='25' transform='translate(1091 5687)' fill='%23fff' stroke='%23707070' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='icon-instagram' transform='translate(-1091 -5687)' clip-path='url(%23clip-path)'%3E%3Cg id='instagram' transform='translate(1103.5 5699.5)'%3E%3Cg id='instagram-2' data-name='instagram' transform='translate(-12.498 -12.5)'%3E%3Cpath id='Caminho_1692' data-name='Caminho 1692' d='M25.38,7.35A9.135,9.135,0,0,0,24.8,4.317,6.4,6.4,0,0,0,21.141.659,9.159,9.159,0,0,0,18.108.078C16.77.015,16.345,0,12.951,0S9.132.015,7.8.073A9.138,9.138,0,0,0,4.766.654,6.1,6.1,0,0,0,2.549,2.1,6.155,6.155,0,0,0,1.108,4.312,9.16,9.16,0,0,0,.527,7.345C.463,8.683.449,9.108.449,12.5s.015,3.819.073,5.152A9.135,9.135,0,0,0,1.1,20.688a6.4,6.4,0,0,0,3.658,3.658,9.16,9.16,0,0,0,3.033.581c1.333.059,1.758.073,5.152.073s3.819-.014,5.152-.073a9.133,9.133,0,0,0,3.033-.581,6.4,6.4,0,0,0,3.658-3.658,9.166,9.166,0,0,0,.581-3.033c.059-1.333.073-1.758.073-5.152s0-3.819-.064-5.152ZM23.129,17.557a6.852,6.852,0,0,1-.43,2.32,4.147,4.147,0,0,1-2.374,2.374,6.877,6.877,0,0,1-2.32.43c-1.319.059-1.714.073-5.05.073s-3.736-.014-5.05-.073a6.849,6.849,0,0,1-2.32-.43,3.847,3.847,0,0,1-1.436-.933,3.887,3.887,0,0,1-.933-1.436,6.878,6.878,0,0,1-.43-2.32c-.059-1.319-.073-1.714-.073-5.05s.014-3.736.073-5.05a6.849,6.849,0,0,1,.43-2.32,3.8,3.8,0,0,1,.938-1.436,3.881,3.881,0,0,1,1.436-.933,6.881,6.881,0,0,1,2.32-.43c1.319-.059,1.714-.073,5.05-.073s3.736.015,5.05.073a6.852,6.852,0,0,1,2.32.43,3.844,3.844,0,0,1,1.436.933A3.886,3.886,0,0,1,22.7,5.143a6.88,6.88,0,0,1,.43,2.32c.059,1.319.073,1.714.073,5.05s-.015,3.726-.073,5.045Zm0,0' transform='translate(-0.449 0)' fill='%23fff'/%3E%3Cpath id='Caminho_1693' data-name='Caminho 1693' d='M131.371,124.5a6.422,6.422,0,1,0,6.422,6.422A6.424,6.424,0,0,0,131.371,124.5Zm0,10.588a4.166,4.166,0,1,1,4.166-4.166A4.167,4.167,0,0,1,131.371,135.088Zm0,0' transform='translate(-118.869 -118.42)' fill='%23fff'/%3E%3Cpath id='Caminho_1694' data-name='Caminho 1694' d='M365.448,90.1a1.5,1.5,0,1,1-1.5-1.5A1.5,1.5,0,0,1,365.448,90.1Zm0,0' transform='translate(-344.77 -84.275)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.footer-social__spotify:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_139' data-name='Retângulo 139' width='25' height='25' transform='translate(1131 5687)' fill='%23fff' stroke='%23707070' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='icon-spotify' transform='translate(-1131 -5687)' clip-path='url(%23clip-path)'%3E%3Cg id='spotify-symbol' transform='translate(1143.5 5699.5)'%3E%3Cg id='spotify-symbol-2' data-name='spotify-symbol' transform='translate(-12.5 -12.5)'%3E%3Cpath id='Caminho_4065' data-name='Caminho 4065' d='M57.124,112.842c-4.16-1.923-9.984-1.072-10.229-1.035a1,1,0,0,0,.3,1.985c.054-.008,5.468-.8,9.088.873a1,1,0,1,0,.842-1.822Z' transform='translate(-39.88 -96.658)' fill='%23fff'/%3E%3Cpath id='Caminho_4066' data-name='Caminho 4066' d='M56.8,84.739c-4.725-2.183-11.351-1.216-11.63-1.174a1,1,0,0,0,.3,1.985c.063-.01,6.316-.917,10.489,1.011a1,1,0,1,0,.842-1.822Z' transform='translate(-38.382 -72.168)' fill='%23fff'/%3E%3Cpath id='Caminho_4067' data-name='Caminho 4067' d='M54.72,55.562c-5.219-2.412-12.549-1.342-12.859-1.3a1,1,0,0,0,.3,1.985c.07-.011,7.05-1.025,11.717,1.132a1,1,0,1,0,.842-1.822Z' transform='translate(-35.521 -46.767)' fill='%23fff'/%3E%3Cpath id='Caminho_4068' data-name='Caminho 4068' d='M12.5,0A12.5,12.5,0,1,0,25,12.5,12.514,12.514,0,0,0,12.5,0Zm0,22.993A10.493,10.493,0,1,1,22.993,12.5,10.5,10.5,0,0,1,12.5,22.994Z' transform='translate(0 -0.001)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.footer-social__deezer:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_140' data-name='Retângulo 140' width='25' height='25' transform='translate(1171 5687)' fill='%23fff' stroke='%23707070' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='icon-deezer' transform='translate(-1171 -5687)' clip-path='url(%23clip-path)'%3E%3Cg id='deezer-symbol' transform='translate(1183.5 5699.5)'%3E%3Cg id='deezer-symbol-2' data-name='deezer-symbol' transform='translate(-12.5 -6.975)'%3E%3Cg id='Grupo_570' data-name='Grupo 570'%3E%3Crect id='Retângulo_142' data-name='Retângulo 142' width='4.558' height='1.381' transform='translate(0 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_143' data-name='Retângulo 143' width='4.558' height='1.382' transform='translate(0 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_144' data-name='Retângulo 144' width='4.558' height='1.382' transform='translate(0 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_145' data-name='Retângulo 145' width='4.558' height='1.381' transform='translate(0 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_146' data-name='Retângulo 146' width='4.558' height='1.381' transform='translate(0 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_147' data-name='Retângulo 147' width='4.558' height='1.381' transform='translate(5.11 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_148' data-name='Retângulo 148' width='4.558' height='1.382' transform='translate(5.11 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_149' data-name='Retângulo 149' width='4.558' height='1.382' transform='translate(5.11 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_150' data-name='Retângulo 150' width='4.558' height='1.381' transform='translate(10.221 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_151' data-name='Retângulo 151' width='4.558' height='1.382' transform='translate(10.221 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_152' data-name='Retângulo 152' width='4.558' height='1.382' transform='translate(10.221 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_153' data-name='Retângulo 153' width='4.558' height='1.381' transform='translate(10.221 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_154' data-name='Retângulo 154' width='4.558' height='1.381' transform='translate(10.221 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_155' data-name='Retângulo 155' width='4.558' height='1.381' transform='translate(10.221 3.592)' fill='%23fff'/%3E%3Crect id='Retângulo_156' data-name='Retângulo 156' width='4.558' height='1.381' transform='translate(10.221 1.796)' fill='%23fff'/%3E%3Crect id='Retângulo_157' data-name='Retângulo 157' width='4.558' height='1.381' transform='translate(15.331 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_158' data-name='Retângulo 158' width='4.558' height='1.382' transform='translate(15.331 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_159' data-name='Retângulo 159' width='4.558' height='1.382' transform='translate(15.331 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_160' data-name='Retângulo 160' width='4.558' height='1.381' transform='translate(15.331 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_161' data-name='Retângulo 161' width='4.558' height='1.381' transform='translate(15.331 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_162' data-name='Retângulo 162' width='4.558' height='1.381' transform='translate(20.442 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_163' data-name='Retângulo 163' width='4.558' height='1.382' transform='translate(20.442 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_164' data-name='Retângulo 164' width='4.558' height='1.381' transform='translate(20.442 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_165' data-name='Retângulo 165' width='4.558' height='1.381' transform='translate(20.442 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_166' data-name='Retângulo 166' width='4.558' height='1.381' transform='translate(20.442 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_167' data-name='Retângulo 167' width='4.558' height='1.381' transform='translate(20.442 3.592)' fill='%23fff'/%3E%3Crect id='Retângulo_168' data-name='Retângulo 168' width='4.558' height='1.381' transform='translate(20.442 1.796)' fill='%23fff'/%3E%3Crect id='Retângulo_169' data-name='Retângulo 169' width='4.558' height='1.381' transform='translate(20.442)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+/* FIM FOOTER */
