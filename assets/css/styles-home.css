@@ -11,7 +11,7 @@
 @media (max-width: 1025px) {
   .home-title {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
   }
 }
 
@@ -46,8 +46,8 @@
 }
 @media (max-width: 1025px) {
   .home-subtitle {
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 /* FIM TITULOS E SUBTITULOS */
@@ -84,7 +84,7 @@
   border-radius: 5px;
   color: var(--primary);
   width: 100%;
-  max-width: 300px;
+  max-width: max-content;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -94,7 +94,7 @@
   .services-top__href {
     font-size: 20px;
     line-height: 20px;
-    padding: 16px 11px 12px 10px;
+    padding: 16px 25px 12px 25px;
   }
 
   .services-top__href:hover {
@@ -103,9 +103,9 @@
 }
 @media (max-width: 1025px) {
   .services-top__href {
-    padding: 20px 20px 16px 20px;
+    padding: 18px 14px 14px 14px;
     font-size: 16px;
-    line-height: 15px;
+    line-height: 16px;
     margin: 0 auto 0 0;
   }
 }
@@ -161,24 +161,25 @@
   color: var(--primary);
   font-weight: 600;
   width: 100%;
-  max-width: 422px;
+  max-width: max-content;
   display: block;
   text-align: center;
   transition: 0.2s linear;
+  margin: 0 auto;
 }
 @media (min-width: 1026px) {
   .operations-href {
     font-size: 20px;
-    line-height: 22px;
-    padding: 12px 12px 8px 12px;
+    line-height: 20px;
+    padding: 16px 25px 12px 25px;
     margin-top: 30px;
   }
 }
 @media (max-width: 1025px) {
   .operations-href {
-    padding: 20px 20px 16px 20px;
+    padding: 18px 14px 14px 14px;
     font-size: 16px;
-    line-height: 15px;
+    line-height: 16px;
     margin: 15px auto 0 auto;
   }
 }
@@ -192,19 +193,18 @@
 .operations-text {
   color: var(--primary);
   padding-bottom: 15px;
+  font-weight: 100;
 }
 @media (min-width: 1026px) {
   .operations-text {
-    font-size: 24px;
-    line-height: 25px;
-    font-weight: 100;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 @media (max-width: 1025px) {
   .operations-text {
     font-size: 16px;
     line-height: 22px;
-    font-weight: bold;
   }
 }
 
@@ -281,8 +281,17 @@
 }
 
 .cases-card__background {
-  width: 100%;
+  position: relative;
   transition: 0.3s linear;
+}
+
+.cases-card__background:after {
+  content: "";
+  background: linear-gradient(#00000000, #000);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
 
 @media (min-width: 1026px) {
@@ -290,6 +299,10 @@
     transform: scale(1.06);
     transition: 0.3s linear;
   }
+}
+
+.cases-card__image {
+  width: 100%;
 }
 
 .cases-card__content {
@@ -460,11 +473,11 @@
 
 @media (min-width: 1026px) {
   .contact-column__text {
-    width: 35%;
+    width: 34%;
   }
 
   .contact-column__form {
-    width: 65%;
+    width: 66%;
   }
 }
 
@@ -474,7 +487,6 @@
   border-left: none;
   border-right: none;
   border-top: none;
-  font-size: 16px;
   line-height: 18px;
   color: var(--primary);
   padding-bottom: 10px;
@@ -484,12 +496,14 @@
   .form-field {
     width: 45%;
     margin-bottom: 50px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1025px) {
   .form-field {
     width: 100%;
     margin-bottom: 30px;
+    font-size: 14px;
   }
 }
 
@@ -499,21 +513,23 @@
   border-left: none;
   border-right: none;
   border-top: none;
-  font-size: 16px;
   line-height: 18px;
   color: var(--primary);
   width: 100%;
   padding-bottom: 10px;
   transition: 0.2s linear;
+  height: 30px;
 }
 @media (min-width: 1026px) {
   .form-field__textarea {
     margin-bottom: 50px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1025px) {
   .form-field__textarea {
     margin-bottom: 30px;
+    font-size: 14px;
   }
 }
 
@@ -534,12 +550,9 @@
 .form-button__submit {
   background: var(--tertiary);
   border-radius: 5px;
-  font-size: 20px;
-  line-height: 20px;
   color: var(--primary);
   width: 100%;
   max-width: 150px;
-  padding: 16px 0 12px 0;
   border: none;
   font-weight: 600;
   transition: 0.2s linear;
@@ -547,8 +560,21 @@
 }
 
 @media (min-width: 1026px) {
+  .form-button__submit {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 0 12px 0;
+  }
   .form-button__submit:hover {
     background: var(--fifth);
+  }
+}
+
+@media (max-width: 1025px) {
+  .form-button__submit {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 18px 14px 14px 14px;
   }
 }
 /* FIM FORMULÁRIO */
