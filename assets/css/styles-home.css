@@ -142,7 +142,7 @@
 
 /* BANNER PRINCIPAL */
 .banner-main {
-  background: url("/assets/images/banner-mainBackground.webp");
+  background: url("assets/images/banner-mainBackground.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
