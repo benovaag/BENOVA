@@ -1,0 +1,58 @@
+/* TOPO SERVIÇOS */
+.services {
+  margin-bottom: 60px;
+}
+
+.services-title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .services-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 1025px) {
+  .services-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.services-title:after {
+  content: "";
+  width: 90%;
+  max-width: 675px;
+  background: var(--secondary);
+  display: block;
+}
+@media (min-width: 1026px) {
+  .services-title:after {
+    margin: 10px 0 15px 0;
+    height: 7px;
+  }
+}
+@media (max-width: 1025px) {
+  .services-title:after {
+    margin: 5px 0 8px 0;
+    height: 3px;
+  }
+}
+
+.services-subtitle {
+  color: var(--primary);
+  font-weight: 100;
+}
+@media (min-width: 1026px) {
+  .services-subtitle {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 45%;
+  }
+}
+@media (max-width: 1025px) {
+  .services-subtitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
