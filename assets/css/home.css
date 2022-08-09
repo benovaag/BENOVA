@@ -559,7 +559,8 @@
   .page-home .operations-column {
     padding-left: 40px;
     padding-right: 15px;
-    width: 35%;
+    width: 50%;
+    max-width: 700px;
   }
 }
 @media (max-width: 1025px) {
@@ -570,7 +571,7 @@
 
 @media (min-width: 1026px) {
   .page-home .operations-image {
-    width: 65%;
+    width: 50%;
     max-width: 960px;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -645,12 +646,13 @@
 }
 
 @media (min-width: 1026px) {
-  .page-home .operations .page-home-title {
+  .page-home .operations,
+  .home-title {
     margin-bottom: 45px;
   }
 }
 @media (max-width: 1025px) {
-  .page-home .operations .page-home-title {
+  .page-home .operations .home-title {
     margin-bottom: 30px;
   }
 }
