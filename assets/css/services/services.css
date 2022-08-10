@@ -1,4 +1,15 @@
 /* TOPO SERVIÇOS */
+@media (min-width: 1026px) {
+  .services {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1025px) {
+  .services {
+    padding-top: 60px;
+  }
+}
+
 .services-title {
   color: var(--primary);
 }

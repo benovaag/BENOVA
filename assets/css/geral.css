@@ -71,18 +71,8 @@ ul li {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-}
-@media (min-width: 1026px) {
-  .content-large {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media (max-width: 1025px) {
-  .content-large {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* HEADER */
@@ -270,6 +260,7 @@ ul li {
   padding-bottom: 10px;
   transition: 0.2s linear;
   box-shadow: inset 0 0 0 5px #000;
+  border-radius: 0;
 }
 @media (min-width: 1026px) {
   .form-field {
@@ -541,6 +532,8 @@ ul li {
 }
 
 .back-button__href {
+  position: fixed;
+  z-index: 9;
   background: var(--quaternary);
   border-radius: 7px;
   color: var(--primary);

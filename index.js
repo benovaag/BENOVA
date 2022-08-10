@@ -8,9 +8,9 @@ app.listen(3500, () => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/pages/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/servicos", (req, res) => {
-  res.sendFile(__dirname + "/pages/services.html");
+  res.sendFile(__dirname + "/services.html");
 });
