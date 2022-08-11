@@ -1,21 +1,162 @@
-/* TITULOS E SUBTITULOS */
-.page-home .home-title {
-  color: var(--primary);
+.page-service-individual .service-banner__image {
+  width: 100%;
+  filter: grayscale(1);
 }
 @media (min-width: 1026px) {
-  .page-home .home-title {
-    font-size: 35px;
-    line-height: 41px;
+  .service-banner__mobile {
+    display: none;
   }
 }
 @media (max-width: 1025px) {
-  .page-home .home-title {
-    font-size: 20px;
-    line-height: 24px;
+  .service-banner__desktop {
+    display: none;
   }
 }
 
-.page-home .home-title:after {
+@media (min-width: 1026px) {
+  .page-service-individual .service-informations {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-informations {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.page-service-individual .service-title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-service-individual .service-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.page-service-individual .service-title:after {
+  content: "";
+  width: 90%;
+  max-width: 675px;
+  background: var(--secondary);
+  display: block;
+}
+@media (min-width: 1026px) {
+  .page-service-individual .service-title:after {
+    margin: 5px 0 20px 0;
+    height: 7px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-title:after {
+    margin: 5px 0 12px 0;
+    height: 3px;
+  }
+}
+
+.page-service-individual .service-subtitle {
+  color: var(--primary);
+  font-weight: 100;
+}
+@media (min-width: 1026px) {
+  .page-service-individual .service-subtitle {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1026px) {
+  .page-service-individual .service-text.service-text__margin {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-text.service-text__margin {
+    margin: 20px 0;
+  }
+}
+
+.page-service-individual .service-text {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-service-individual .service-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.page-service-individual .service-informations__items {
+  padding-top: 8px;
+}
+
+.page-service-individual .service-informations__item {
+  list-style: disc;
+  color: var(--primary);
+  margin-left: 15px;
+  padding-bottom: 5px;
+}
+@media (min-width: 1026px) {
+  .page-service-individual .service-informations__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-informations__item {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* MÓDULOS */
+@media (min-width: 1026px) {
+  .service-modules {
+    padding-bottom: 15px;
+  }
+}
+
+.page-service-individual .service-general__title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-service-individual .service-general__title {
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-service-individual .service-general__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+}
+
+.page-service-individual .service-general__title:after {
   content: "";
   width: 90%;
   max-width: 300px;
@@ -24,855 +165,120 @@
   display: block;
 }
 @media (min-width: 1026px) {
-  .page-home .home-title:after {
-    margin: 2px 0 8px 0;
+  .page-service-individual .service-general__title:after {
+    margin: 2px 0 0 0;
   }
 }
 @media (max-width: 1025px) {
-  .page-home .home-title:after {
-    margin: 5px 0 8px 0;
+  .page-service-individual .service-general__title:after {
+    margin: 5px 0 0 0;
   }
 }
 
-.page-home .home-subtitle {
-  color: var(--primary);
-  font-weight: 100;
-}
-@media (min-width: 1026px) {
-  .page-home .home-subtitle {
-    font-size: 16px;
-    line-height: 18px;
-    max-width: 650px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .home-subtitle {
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-/* FIM TITULOS E SUBTITULOS */
-
-/* BANNER PRINCIPAL */
-.page-home .banner-main {
-  background: url("../images/banner-mainBackground.webp");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.2s linear;
-}
-
-@media (max-width: 1025px) {
-  .page-home .banner-main {
-    padding-top: 100px;
-  }
-}
-
-.page-home .banner-main__image {
-  width: 100%;
-  max-width: 625px;
-  display: block;
-}
-@media (min-width: 1026px) {
-  .page-home .banner-main__image {
-    margin: 0 0 0 auto;
-    padding-top: 180px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .banner-main__image {
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-}
-
-.page-home .banner-main__columns {
+.page-service-individual .service-modules__items {
   display: flex;
   justify-content: space-between;
 }
-@media (min-width: 1026px) {
-  .page-home .banner-main__columns {
-    align-items: center;
-  }
-}
 @media (max-width: 1025px) {
-  .page-home .banner-main__columns {
+  .page-service-individual .service-modules__items {
     flex-direction: column;
   }
 }
 
-@media (min-width: 1026px) {
-  .page-home .banner-main__column {
-    width: 50%;
-  }
-}
-
-.page-home .banner-main__title {
-  color: var(--primary);
-}
-@media (min-width: 1026px) {
-  .page-home .banner-main__title {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .banner-main__title {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
-
-.page-home .banner-main__title:after {
-  content: "";
-  width: 90%;
-  max-width: 675px;
-  background: var(--secondary);
-  display: block;
-}
-@media (min-width: 1026px) {
-  .page-home .banner-main__title:after {
-    margin: 2px 0 15px 0;
-    height: 7px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .banner-main__title:after {
-    margin: 5px 0 8px 0;
-    height: 3px;
-  }
-}
-
-.page-home .banner-main__subtitle {
-  color: var(--primary);
-  font-weight: 100;
-  max-width: 80%;
-}
-@media (min-width: 1026px) {
-  .page-home .banner-main__subtitle {
-    font-size: 30px;
-    line-height: 34px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .banner-main__subtitle {
-    font-size: 18px;
-    line-height: 20px;
-  }
-}
-
-.page-home .banner-main__href {
-  background: var(--tertiary);
-  border-radius: 5px;
-  color: var(--primary);
-  width: 100%;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  transition: 0.2s linear;
-}
-
-@media (min-width: 1026px) {
-  .page-home .banner-main__href {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 16px 25px 12px 25px;
-    margin-top: 50px;
-  }
-
-  .page-home .banner-main__href:hover {
-    background: var(--fifth);
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .banner-main__href {
-    padding: 18px 25px 14px 25px;
-    font-size: 16px;
-    line-height: 16px;
-    margin-top: 30px;
-  }
-}
-/* FIM BANNER PRINCIPAL */
-
-/* SERVIÇOS */
-@media (min-width: 1026px) {
-  .page-home .services {
-    padding-bottom: 30px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services {
-    padding-bottom: 20px;
-  }
-}
-
-.page-home .services-top {
-  display: flex;
-  align-items: center;
-}
-@media (min-width: 1026px) {
-  .page-home .services-top {
-    padding-top: 40px;
-    padding-bottom: 80px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-top {
-    flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 45px;
-  }
-}
-
-@media (max-width: 1025px) {
-  .page-home .services-top__text {
-    width: 100%;
-  }
-}
-
-.page-home .services-top__href {
-  background: var(--tertiary);
-  border-radius: 5px;
-  color: var(--primary);
-  width: 100%;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  transition: 0.2s linear;
-}
-@media (min-width: 1026px) {
-  .page-home .services-top__href {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 16px 25px 12px 25px;
-    margin-left: 55px;
-  }
-
-  .page-home .services-top__href:hover {
-    background: var(--fifth);
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-top__href {
-    padding: 18px 25px 14px 25px;
-    font-size: 16px;
-    line-height: 16px;
-    margin: 0 auto 0 0;
-    margin-top: 30px;
-  }
-}
-
-.page-home .services-columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-@media (max-width: 1025px) {
-  .page-home .services-columns {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 1025px) {
-  .page-home .services-column {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1026px) {
-  .page-home .services-column.services-column__two {
-    margin: 0 40px 0 40px;
-  }
-}
-
-.page-home .services-header {
-  display: flex;
-  align-items: center;
-}
-@media (min-width: 1026px) {
-  .page-home .services-header {
-    margin-bottom: 70px;
-    justify-content: center;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-header {
-    margin-bottom: 40px;
-    padding-right: 15px;
-    position: relative;
-    flex-wrap: wrap;
-  }
-
-  .page-home .services-header:after {
-    content: "\f107";
-    font-family: FontAwesome;
-    font-size: 16px;
-    position: absolute;
-    right: 0;
-  }
-}
-
-.page-home .services-header:before {
-  content: "";
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='72.908' height='77.714' viewBox='0 0 72.908 77.714'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Cpath id='Caminho_4277' data-name='Caminho 4277' d='M65.308,98.616V82.291A26.843,26.843,0,0,0,91.113,61.9c.15.075.3.075.451.15h.075a18.276,18.276,0,0,1,3.912,2.257,18.837,18.837,0,0,1,7.824,14.67A19.1,19.1,0,0,1,84.342,98.616H65.308M46.049,36.4H64.706A19.38,19.38,0,0,1,83.966,52.725H46.049ZM38.3,28.65h0V60.473H83.514A19.136,19.136,0,0,1,65.158,74.466H57.635v31.748H84.417A26.732,26.732,0,0,0,96.454,55.583h0a7.591,7.591,0,0,0-1.128-.527H95.25l-1.128-.451c-.075,0-.075,0-.15-.075a5.9,5.9,0,0,0-1.053-.376c-.075,0-.15-.075-.226-.075-.3-.075-.6-.226-.9-.3C90.962,39.559,78.85,28.5,64.481,28.5H38.3Z' transform='translate(-38.3 -28.5)' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Grupo_590' data-name='Grupo 590' clip-path='url(%23clip-path)'%3E%3Crect id='Retângulo_227' data-name='Retângulo 227' width='73.276' height='77.714' transform='translate(0 0.15)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-right: 10px;
-}
-@media (min-width: 1026px) {
-  .page-home .services-header:before {
-    width: 73px;
-    height: 77px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-header:before {
-    width: 41px;
-    height: 45px;
-  }
-}
-
-.page-home .services-header__title {
-  color: var(--primary);
-  font-weight: 100;
-}
-@media (min-width: 1026px) {
-  .page-home .services-header__title {
-    font-size: 61px;
-    line-height: 64px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-header__title {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-
-.page-home .services-column__one .services-header__color {
-  font-family: "Effra";
-  color: var(--fifth);
-}
-.page-home .services-column__one .services-header:after {
-  color: var(--fifth);
-}
-
-.page-home .services-column__two .services-header__color {
-  font-family: "Effra";
-  color: var(--quaternary);
-}
-.page-home .services-column__two .services-header:after {
-  color: var(--quaternary);
-}
-
-.page-home .services-column__three .services-header__color {
-  font-family: "Effra";
-  color: var(--tertiary);
-}
-.page-home .services-column__three .services-header:after {
-  color: var(--tertiary);
-}
-
-@media (max-width: 1025px) {
-  .page-home .services-items {
-    transition: all 0.6s ease-in-out;
-    opacity: 0;
-    height: auto;
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  .page-home .services-column__active .services-items {
-    opacity: 1;
-    height: auto;
-    max-height: 9999px;
-    transition: all 0.6s ease-in-out;
-  }
-}
-
-.page-home .services-item {
+.page-service-individual .service-modules__item {
   border-radius: 30px;
-  padding: 35px 25px 25px 25px;
-  max-width: 432px;
+  padding: 35px 15px 15px 15px;
   position: relative;
   transition: 0.2s linear;
+  max-width: 315px;
+  margin: 0 auto 70px auto;
 }
 @media (min-width: 1026px) {
-  .page-home .services-item {
-    min-height: 264px;
-    margin-bottom: 70px;
-  }
-
-  .page-home .services-item:hover {
-    transform: scale(1.01);
-  }
-}
-@media (max-width: 1025px) {
-  .services-item {
-    margin: 30px auto 60px auto;
+  .page-service-individual .service-modules__margin {
+    margin-right: 40px;
   }
 }
 
-.page-home .services-column__one .services-item {
+.page-service-individual .service-modules__one .service-modules__item {
   border: 2px solid var(--fifth);
 }
-
-.page-home .services-column__two .services-item {
+.page-service-individual .service-modules__two .service-modules__item {
   border: 2px solid var(--quaternary);
 }
-
-.page-home .services-column__three .services-item {
+.page-service-individual .service-modules__three .service-modules__item {
   border: 2px solid var(--tertiary);
 }
 
-.page-home .services-item__title {
+.page-service-individual .service-modules__title {
+  color: var(--primary);
   font-family: "Effra";
-  display: flex;
-  align-items: center;
+  font-size: 23px;
+  line-height: 23px;
+  padding-bottom: 10px;
+}
+
+.service-icon {
   position: absolute;
   left: 15px;
   background: #222222;
   padding: 0 10px;
-}
-@media (min-width: 1026px) {
-  .page-home .services-item__title {
-    font-size: 30px;
-    line-height: 30px;
-    top: -30px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-item__title {
-    font-size: 20px;
-    line-height: 20px;
-    top: -25px;
-  }
+  display: block;
+  font-size: 23px;
+  line-height: 23px;
+  top: -30px;
 }
 
-.page-home .services-column__one .services-item__title {
-  color: var(--fifth);
-}
-
-.page-home .services-column__two .services-item__title {
-  color: var(--quaternary);
-}
-
-.page-home .services-column__three .services-item__title {
-  color: var(--tertiary);
-}
-
-.page-home .services-icon:before {
+.page-service-individual .service-icon:before {
   content: "";
   background-repeat: no-repeat;
   background-size: 100%;
-  margin-right: 15px;
-}
-@media (min-width: 1026px) {
-  .page-home .services-icon:before {
-    height: 50px;
-    width: 50px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-icon:before {
-    height: 40px;
-    width: 40px;
-  }
+  display: block;
+  height: 50px;
+  width: 50px;
 }
 
-.page-home .services-icon__planning:before {
+.page-service-individual .service-icon__planning:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg id='consultoria' transform='translate(0)'%3E%3Cpath id='Caminho_3886' data-name='Caminho 3886' d='M.781,50H31.574a.781.781,0,0,0,.781-.781V41.747a5.321,5.321,0,0,0-3.686-5.119L20.779,34V31.506c0-.027,0-.054,0-.08a7.51,7.51,0,0,0,2.274-2.987,3.008,3.008,0,0,0,2.3-4.931c.116-.538.312-1.532.4-2.1.026-.175.051-.34.075-.5a5.234,5.234,0,0,0-.515-4A10.42,10.42,0,0,0,6.244,18.448a.78.78,0,0,0-.031.125,9.007,9.007,0,0,0,.657,4.936,3.008,3.008,0,0,0,2.3,4.929,7.566,7.566,0,0,0,2.346,3.044l.06.044V34l-7.891,2.63A5.321,5.321,0,0,0,0,41.747v7.471A.781.781,0,0,0,.781,50ZM18.1,39.6l-.314,1.8H14.572l-.281-1.606a.778.778,0,0,0-.08-.233l1.967-1.4,1.935,1.374C18.107,39.552,18.1,39.574,18.1,39.6Zm-3.312,3.358h2.786l.958,5.483h-4.7Zm16.008-1.208v6.69H27.057V45.019a.781.781,0,1,0-1.562,0v3.419H20.116l-.989-5.656.394-2.251,2.236,1.588a.781.781,0,0,0,1.234-.637v-5.1l5.186,1.729a3.779,3.779,0,0,1,2.617,3.637ZM21.428,35.86v4.108l-3.9-2.77,2.528-1.8Zm2.105-9.072a7.526,7.526,0,0,0-.03-2.728,1.445,1.445,0,0,1,.03,2.728ZM7.745,18.89A8.857,8.857,0,0,1,23.93,17.647a3.746,3.746,0,0,1,.351,3.023c-.025.159-.051.327-.077.507-.053.362-.155.909-.25,1.385a3,3,0,0,0-.914-.142h-.028C22.128,19.5,21.13,18,19.881,17.68a2.4,2.4,0,0,0-2.355.863.779.779,0,0,0-.117.151c-1.429,2.414-3.98,3.567-7.582,3.428a.78.78,0,0,0-.643.3,3,3,0,0,0-1,.171A7.356,7.356,0,0,1,7.745,18.89Zm-.007,6.54a1.448,1.448,0,0,1,.925-1.348,7.73,7.73,0,0,0,.011,2.7,1.448,1.448,0,0,1-.936-1.352ZM10.353,23.7h.062c3.841,0,6.627-1.383,8.286-4.117.234-.225.543-.449.8-.384s1.1.522,2.092,3.927a.764.764,0,0,0,.029.082,5.972,5.972,0,0,1-9.151,7.04A6.134,6.134,0,0,1,10.353,23.7Zm5.758,9.347a7.541,7.541,0,0,0,3.106-.67v1.708L16.178,36.24l-3.039-2.158V32.434a7.543,7.543,0,0,0,2.972.609ZM12.3,35.4l2.528,1.8-3.9,2.77V35.86ZM1.562,41.747A3.779,3.779,0,0,1,4.18,38.11l5.186-1.729v5.1a.781.781,0,0,0,1.234.637l2.236-1.588.394,2.251-.989,5.656H6.861V45.019a.781.781,0,1,0-1.562,0v3.419H1.562ZM50,17.3a.781.781,0,0,1-.781.781H28.644a.781.781,0,1,1,0-1.562h2.965V11.654a.781.781,0,1,1,1.562,0v4.863h2.8V7.687a.781.781,0,0,1,1.562,0v8.831h2.8V9.456a.781.781,0,1,1,1.562,0v7.061h2.8V5.435a.781.781,0,0,1,1.562,0V16.517h2.965A.781.781,0,0,1,50,17.3ZM44.943.207A.781.781,0,1,1,46,1.356L41.641,5.377a.781.781,0,0,1-.823.15l-3.9-1.584-4,3.636a.781.781,0,1,1-1.052-1.156l4.361-3.967a.781.781,0,0,1,.82-.146l3.9,1.583ZM28.474,24.639a.781.781,0,0,0-.612.763v1.972a.781.781,0,0,0,.612.763l.6.133a6.046,6.046,0,0,0,.368.887l-.33.518a.781.781,0,0,0,.107.972l1.394,1.394a.781.781,0,0,0,.972.107l.518-.329a6.04,6.04,0,0,0,.887.368l.133.6a.781.781,0,0,0,.763.612h1.971a.781.781,0,0,0,.763-.612l.133-.6a6.035,6.035,0,0,0,.887-.368l.518.329a.781.781,0,0,0,.972-.107l1.394-1.394a.781.781,0,0,0,.107-.972l-.33-.518a6.056,6.056,0,0,0,.368-.887l.6-.133a.781.781,0,0,0,.612-.763V25.4a.781.781,0,0,0-.612-.763l-.6-.133a6.043,6.043,0,0,0-.368-.887l.33-.518a.781.781,0,0,0-.107-.972L39.13,20.734a.781.781,0,0,0-.972-.107l-.518.329a6.056,6.056,0,0,0-.887-.368l-.133-.6a.781.781,0,0,0-.763-.612H33.885a.781.781,0,0,0-.763.612l-.133.6a6.04,6.04,0,0,0-.887.368l-.518-.329a.781.781,0,0,0-.972.107l-1.394,1.394a.781.781,0,0,0-.107.972l.33.518a6.049,6.049,0,0,0-.368.887Zm.951,1.389.444-.1a.781.781,0,0,0,.591-.584A4.5,4.5,0,0,1,31.016,24a.781.781,0,0,0,0-.831l-.244-.384.508-.508.384.244a.781.781,0,0,0,.83,0,4.5,4.5,0,0,1,1.341-.556.781.781,0,0,0,.584-.591l.1-.444h.718l.1.444a.781.781,0,0,0,.584.591,4.494,4.494,0,0,1,1.341.556.781.781,0,0,0,.83-.005l.384-.244.508.508-.244.384a.781.781,0,0,0,0,.831,4.5,4.5,0,0,1,.556,1.341.781.781,0,0,0,.591.584l.444.1v.718l-.444.1a.781.781,0,0,0-.591.584,4.5,4.5,0,0,1-.556,1.341.781.781,0,0,0,0,.831l.244.384-.508.508-.384-.244a.781.781,0,0,0-.83,0,4.5,4.5,0,0,1-1.341.556.781.781,0,0,0-.584.591l-.1.444h-.718l-.1-.444a.781.781,0,0,0-.584-.591,4.5,4.5,0,0,1-1.341-.556.781.781,0,0,0-.83,0l-.384.244-.508-.508.244-.384a.781.781,0,0,0,0-.831,4.5,4.5,0,0,1-.556-1.341.781.781,0,0,0-.591-.584l-.444-.1ZM34.871,29.7a3.311,3.311,0,1,0-3.311-3.311A3.311,3.311,0,0,0,34.871,29.7Zm0-5.059a1.748,1.748,0,1,1-1.748,1.748A1.748,1.748,0,0,1,34.871,24.639Z' fill='%23a263e8'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__lgpd:before {
+.page-service-individual .service-icon__lgpd:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50' height='50' viewBox='0 0 50 50'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_7' data-name='Retângulo 7' width='50' height='50' transform='translate(308 1236)' fill='%23c2c2c2'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Grupo_de_máscara_1' data-name='Grupo de máscara 1' transform='translate(-308 -1236)' clip-path='url(%23clip-path)'%3E%3Cg id='lgpd' transform='translate(308 1236)'%3E%3Cg id='_09-Agency' data-name='09-Agency'%3E%3Cpath id='Caminho_3924' data-name='Caminho 3924' d='M7.031,10.156H.781A.781.781,0,0,1,0,9.375V4.688a.781.781,0,0,1,.781-.781h6.25a.781.781,0,0,1,.781.781V9.375A.781.781,0,0,1,7.031,10.156ZM1.563,8.594H6.25V5.469H1.563Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3925' data-name='Caminho 3925' d='M49.219,10.156h-6.25a.781.781,0,0,1-.781-.781V4.688a.781.781,0,0,1,.781-.781h6.25A.781.781,0,0,1,50,4.688V9.375A.781.781,0,0,1,49.219,10.156ZM43.75,8.594h4.688V5.469H43.75Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3926' data-name='Caminho 3926' d='M42.969,10.156H7.031a.781.781,0,0,1-.781-.781V4.688a.781.781,0,0,1,.781-.781H42.969a.781.781,0,0,1,.781.781V9.375A.781.781,0,0,1,42.969,10.156ZM7.813,8.594H42.188V5.469H7.813Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3927' data-name='Caminho 3927' d='M49.219,46.094H.781A.781.781,0,0,1,0,45.313V9.375a.781.781,0,0,1,.781-.781H49.219A.781.781,0,0,1,50,9.375V45.313A.781.781,0,0,1,49.219,46.094ZM1.563,44.531H48.438V10.156H1.563Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3928' data-name='Caminho 3928' d='M29.688,34.375H20.313a.781.781,0,0,1-.781-.781V30.469a.781.781,0,0,1,.229-.552l1.563-1.563a.781.781,0,0,1,.552-.229h6.25a.781.781,0,0,1,.552.229l1.563,1.563a.781.781,0,0,1,.229.552v3.125A.781.781,0,0,1,29.688,34.375Zm-8.594-1.562h7.813v-2.02l-1.1-1.1H22.2l-1.1,1.1Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3929' data-name='Caminho 3929' d='M24.219,13.281h1.563V28.906H24.219Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3930' data-name='Caminho 3930' d='M16.406,27.344a4.692,4.692,0,0,1-4.687-4.687.781.781,0,0,1,.781-.781h7.812a.781.781,0,0,1,.781.781A4.692,4.692,0,0,1,16.406,27.344ZM13.38,23.438a3.125,3.125,0,0,0,6.052,0Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3931' data-name='Caminho 3931' d='M33.594,27.344a4.692,4.692,0,0,1-4.687-4.687.781.781,0,0,1,.781-.781H37.5a.781.781,0,0,1,.781.781A4.692,4.692,0,0,1,33.594,27.344Zm-3.026-3.906a3.125,3.125,0,0,0,6.052,0Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3932' data-name='Caminho 3932' d='M19.63,23.036l-3.223-5.8-3.223,5.8-1.366-.759,3.906-7.031a.812.812,0,0,1,1.366,0L21,22.277Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3933' data-name='Caminho 3933' d='M36.817,23.036l-3.223-5.8-3.223,5.8L29,22.277l3.906-7.031a.812.812,0,0,1,1.366,0l3.906,7.031Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3934' data-name='Caminho 3934' d='M14.063,14.844H35.938v1.563H14.063Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3935' data-name='Caminho 3935' d='M17.969,32.813H32.031v1.563H17.969Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3936' data-name='Caminho 3936' d='M33.594,32.813h1.563v1.563H33.594Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3937' data-name='Caminho 3937' d='M7.813,35.938H9.375V37.5H7.813Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3938' data-name='Caminho 3938' d='M10.938,35.938H24.219V37.5H10.938Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3939' data-name='Caminho 3939' d='M7.813,39.063H24.219v1.563H7.813Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3940' data-name='Caminho 3940' d='M25.781,35.938h1.563V37.5H25.781Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3941' data-name='Caminho 3941' d='M28.906,35.938H42.188V37.5H28.906Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3942' data-name='Caminho 3942' d='M25.781,39.063H42.188v1.563H25.781Z' fill='%23a263e8'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__finnance:before {
+.page-service-individual .service-icon__finnance:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='49.952' height='50' viewBox='0 0 49.952 50'%3E%3Cg id='Outline_final' transform='translate(-0.807 -0.806)'%3E%3Cpath id='Caminho_3943' data-name='Caminho 3943' d='M36.29,31.452a.806.806,0,0,1-.806-.806V20.968H19.355v4.839a.806.806,0,1,1-1.613,0V20.161a.806.806,0,0,1,.806-.806H36.29a.806.806,0,0,1,.806.806V30.645A.806.806,0,0,1,36.29,31.452Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3944' data-name='Caminho 3944' d='M36.29,24.194H18.548a.806.806,0,0,1,0-1.613H36.29a.806.806,0,1,1,0,1.613Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3945' data-name='Caminho 3945' d='M36.29,27.419h-5.46a.806.806,0,0,1,0-1.613h5.46a.806.806,0,1,1,0,1.613Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3946' data-name='Caminho 3946' d='M27.419,20.161A9.677,9.677,0,1,1,37.1,10.484,9.677,9.677,0,0,1,27.419,20.161Zm0-17.742a8.065,8.065,0,1,0,8.065,8.065,8.065,8.065,0,0,0-8.065-8.065Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3947' data-name='Caminho 3947' d='M28.226,14.516H25A.806.806,0,1,1,25,12.9h3.226a.806.806,0,1,0,0-1.613H26.613a2.419,2.419,0,1,1,0-4.839h3.226a.806.806,0,1,1,0,1.613H26.613a.806.806,0,1,0,0,1.613h1.613a2.419,2.419,0,0,1,0,4.839Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3948' data-name='Caminho 3948' d='M27.419,8.065a.806.806,0,0,1-.806-.806V5.645a.806.806,0,0,1,1.613,0V7.258A.806.806,0,0,1,27.419,8.065Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3949' data-name='Caminho 3949' d='M27.419,16.129a.806.806,0,0,1-.806-.806V13.71a.806.806,0,1,1,1.613,0v1.613A.806.806,0,0,1,27.419,16.129Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3950' data-name='Caminho 3950' d='M15.323,50.806a.806.806,0,0,1-.57-.236L1.043,36.86a.806.806,0,0,1,0-1.14l5.645-5.645a.806.806,0,0,1,1.14,0l13.71,13.71a.806.806,0,0,1,0,1.14L15.893,50.57a.806.806,0,0,1-.57.236ZM2.753,36.29,15.323,48.86l4.5-4.5L7.258,31.785Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3951' data-name='Caminho 3951' d='M8.871,33.065a.806.806,0,0,1-.57-1.377l6.452-6.452a.806.806,0,0,1,.57-.236h13.71a3.226,3.226,0,0,1,0,6.452H23.387a.806.806,0,0,1,0-1.613h5.645a1.613,1.613,0,0,0,0-3.226H15.656L9.441,32.828A.806.806,0,0,1,8.871,33.065Z' fill='%23a263e8'/%3E%3Cpath id='Caminho_3952' data-name='Caminho 3952' d='M19.355,43.548a.806.806,0,0,1-.57-1.377l4.032-4.032a.806.806,0,0,1,.57-.236H35.136L48.79,23.463A1.481,1.481,0,1,0,46.664,21.4l-9.8,9.814a.806.806,0,0,1-.571.236H28.226a.806.806,0,0,1,0-1.613h7.73l9.566-9.578a3.094,3.094,0,0,1,4.435,4.31L36.07,39.265a.806.806,0,0,1-.586.252H23.721l-3.8,3.8a.806.806,0,0,1-.57.236Z' fill='%23a263e8'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__deployment:before {
+.page-service-individual .service-icon__deployment:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg id='Grupo_521' data-name='Grupo 521' transform='translate(-0.806 -0.806)'%3E%3Cpath id='Caminho_3887' data-name='Caminho 3887' d='M43.548,18.548h4.839a2.422,2.422,0,0,0,2.419-2.419V3.226A2.422,2.422,0,0,0,48.387.806H27.419A2.422,2.422,0,0,0,25,3.226V9.677H22.806l-.7,2.1a14.369,14.369,0,0,0-3.6,1.494l-1.573-.787V.806H.806V18.548H13.251A14.4,14.4,0,0,0,11.78,22.1l-2.1.7v5.42H3.226A2.422,2.422,0,0,0,.806,30.645v12.9a2.422,2.422,0,0,0,2.419,2.419H8.065v.139A4.664,4.664,0,0,1,6.9,49.194H4.839v1.613H22.581V49.194H20.517a4.666,4.666,0,0,1-1.162-3.087v-.139h4.839a2.422,2.422,0,0,0,2.419-2.419V41.935h2.194l.7-2.1a14.369,14.369,0,0,0,3.6-1.494l1.573.787V50.806H50.806V33.065H38.362a14.4,14.4,0,0,0,1.471-3.556l2.1-.7v-5.42h4.839V21.774H44.71a4.666,4.666,0,0,1-1.162-3.087Zm4.839-1.613H27.419a.807.807,0,0,1-.806-.806V13.71H49.194v2.419A.807.807,0,0,1,48.387,16.935ZM31.1,21.774H29.032v1.613h6.141a9.659,9.659,0,0,1-8.56,12.056v-4.8a2.422,2.422,0,0,0-2.419-2.419H16.44A9.659,9.659,0,0,1,25,16.169a2.42,2.42,0,0,0,2.415,2.379h4.839v.139A4.666,4.666,0,0,1,31.1,21.774ZM27.419,2.419H48.387a.807.807,0,0,1,.806.806V12.1H26.613V3.226A.807.807,0,0,1,27.419,2.419Zm-25,0h12.9V13.481L13.71,15.094v-4.61H4.032v4.839h9.448l-1.2,1.2.206.412H2.419ZM12.1,12.1V13.71H5.645V12.1ZM11.29,23.969l1.85-.617.1-.442a12.8,12.8,0,0,1,1.634-3.936l.24-.385-.873-1.748,2.6-2.6,1.748.874.384-.24a12.8,12.8,0,0,1,3.936-1.634l.441-.1.618-1.849H25v3.267A11.258,11.258,0,0,0,14.783,28.226H11.29Zm-8.065,5.87H24.194a.807.807,0,0,1,.806.806v8.871H2.419V30.645A.807.807,0,0,1,3.226,29.839ZM18.551,49.194H8.869a6.271,6.271,0,0,0,.809-3.087v-.139h8.065v.139A6.271,6.271,0,0,0,18.551,49.194Zm5.643-4.839H3.226a.807.807,0,0,1-.806-.806V41.129H25v2.419A.807.807,0,0,1,24.194,44.355Zm25,4.839H36.29V38.133L37.9,36.519v4.61h9.677V36.29H38.132l1.2-1.2-.206-.412H49.194Zm-9.677-9.677V37.9h6.452v1.613Zm.806-11.872-1.85.617-.1.442a12.8,12.8,0,0,1-1.634,3.936l-.24.385.873,1.748-2.6,2.6L33.023,36.5l-.384.24A12.8,12.8,0,0,1,28.7,38.372l-.441.1-.618,1.849H26.613V37.056A11.262,11.262,0,0,0,36.831,23.387h3.492Zm-7.26-5.87a6.271,6.271,0,0,0,.809-3.087v-.139h8.065v.139a6.271,6.271,0,0,0,.809,3.087Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3888' data-name='Caminho 3888' d='M37.9,42.742h9.677v1.613H37.9Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3889' data-name='Caminho 3889' d='M37.9,45.968h1.613v1.613H37.9Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3890' data-name='Caminho 3890' d='M41.129,45.968h6.452v1.613H41.129Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3891' data-name='Caminho 3891' d='M4.032,7.258H13.71V8.871H4.032Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3892' data-name='Caminho 3892' d='M12.1,4.032H13.71V5.645H12.1Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3893' data-name='Caminho 3893' d='M4.032,4.032h6.452V5.645H4.032Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3894' data-name='Caminho 3894' d='M33.822,26.7a8.125,8.125,0,0,0,.049-.891,8.027,8.027,0,0,0-.05-.9l-1.6.18a6.5,6.5,0,0,1,0,1.431Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3895' data-name='Caminho 3895' d='M33.43,28.444,31.9,27.917a6.385,6.385,0,0,1-.615,1.291l1.369.852A8.1,8.1,0,0,0,33.43,28.444Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3896' data-name='Caminho 3896' d='M31.554,31.464,30.4,30.333a6.485,6.485,0,0,1-1.014.839l.9,1.34A8.1,8.1,0,0,0,31.554,31.464Z' fill='%23ef7b5e'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__design:before {
+.page-service-individual .service-icon__design:before {
   background-image: url("data:image/svg+xml,%3Csvg id='creative-experience' xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg id='Grupo_524' data-name='Grupo 524'%3E%3Cg id='Grupo_523' data-name='Grupo 523'%3E%3Cpath id='Caminho_3919' data-name='Caminho 3919' d='M46.331,4.5H22.554V5.969H46.331a2.2,2.2,0,0,1,2.2,2.2V29.941H22.407V8.358L18.738,2.243,15.068,8.358V29.941H12.622V0H4.305V29.941H1.468V8.17a2.216,2.216,0,0,1,1.41-2.055L2.349,4.746A3.693,3.693,0,0,0,0,8.17v27.4a3.673,3.673,0,0,0,3.669,3.669H17.417v5.382h-2.2a2.694,2.694,0,0,0-2.691,2.691V50H37.476V47.309a2.694,2.694,0,0,0-2.691-2.691h-2.2V39.237H46.331A3.673,3.673,0,0,0,50,35.567V8.17A3.673,3.673,0,0,0,46.331,4.5ZM18.738,5.1,20.666,8.31,18.738,9.467,16.809,8.31Zm-2.2,4.762,2.2,1.321,2.2-1.321v16.17h-4.4V9.858Zm0,17.637h4.4v2.446h-4.4ZM5.773,28.18H9.344V26.712H5.773V25.245H7.779V23.777H5.773V22.309H9.344V20.842H5.773V19.374H7.779V17.906H5.773V16.439H9.344V14.971H5.773V13.5H7.779V12.035H5.773V10.568H9.344V9.1H5.773V7.632H7.779V6.164H5.773V4.7H9.344V3.229H5.773V1.468h5.382V29.941H5.773ZM34.785,46.086a1.224,1.224,0,0,1,1.223,1.223v1.223H13.992V47.309a1.224,1.224,0,0,1,1.223-1.223Zm-15.9-1.468V39.237H31.116v5.382Zm29.648-9.051a2.2,2.2,0,0,1-2.2,2.2H3.669a2.2,2.2,0,0,1-2.2-2.2V31.409H48.532v4.158Z' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_526' data-name='Grupo 526'%3E%3Cg id='Grupo_525' data-name='Grupo 525'%3E%3Cpath id='Caminho_3920' data-name='Caminho 3920' d='M29.941,7.436v8.317H47.065V7.436ZM45.6,14.286H31.409V8.9H45.6Z' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_528' data-name='Grupo 528'%3E%3Cg id='Grupo_527' data-name='Grupo 527'%3E%3Cpath id='Caminho_3921' data-name='Caminho 3921' d='M29.941,17.221V22.6h7.828V17.221Zm6.36,3.914H31.409V18.689H36.3Z' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_530' data-name='Grupo 530'%3E%3Cg id='Grupo_529' data-name='Grupo 529'%3E%3Cpath id='Caminho_3922' data-name='Caminho 3922' d='M39.237,17.221V22.6h7.828V17.221Zm6.36,3.914H40.7V18.689H45.6Z' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_532' data-name='Grupo 532'%3E%3Cg id='Grupo_531' data-name='Grupo 531'%3E%3Cpath id='Caminho_3923' data-name='Caminho 3923' d='M28.327,8.9V7.436h-4.4V8.9h1.468v18.1H23.924v1.468h4.4V27.006H26.859V8.9Z' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_534' data-name='Grupo 534'%3E%3Cg id='Grupo_533' data-name='Grupo 533'%3E%3Crect id='Retângulo_8' data-name='Retângulo 8' width='1.468' height='1.468' transform='translate(24.266 33.855)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_536' data-name='Grupo 536'%3E%3Cg id='Grupo_535' data-name='Grupo 535'%3E%3Crect id='Retângulo_9' data-name='Retângulo 9' width='1.468' height='1.468' transform='translate(27.202 33.855)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_538' data-name='Grupo 538'%3E%3Cg id='Grupo_537' data-name='Grupo 537'%3E%3Crect id='Retângulo_10' data-name='Retângulo 10' width='1.468' height='1.468' transform='translate(21.331 33.855)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_540' data-name='Grupo 540'%3E%3Cg id='Grupo_539' data-name='Grupo 539'%3E%3Crect id='Retângulo_11' data-name='Retângulo 11' width='1.468' height='1.468' transform='translate(18.004 19.129)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_542' data-name='Grupo 542'%3E%3Cg id='Grupo_541' data-name='Grupo 541'%3E%3Crect id='Retângulo_12' data-name='Retângulo 12' width='1.468' height='2.446' transform='translate(18.004 22.065)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_544' data-name='Grupo 544'%3E%3Cg id='Grupo_543' data-name='Grupo 543'%3E%3Crect id='Retângulo_13' data-name='Retângulo 13' width='1.468' height='4.892' transform='translate(18.004 12.769)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_546' data-name='Grupo 546'%3E%3Cg id='Grupo_545' data-name='Grupo 545'%3E%3Crect id='Retângulo_14' data-name='Retângulo 14' width='1.468' height='1.468' transform='translate(35.567 24.56)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_548' data-name='Grupo 548'%3E%3Cg id='Grupo_547' data-name='Grupo 547'%3E%3Crect id='Retângulo_15' data-name='Retângulo 15' width='3.425' height='1.468' transform='translate(30.675 24.56)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_550' data-name='Grupo 550'%3E%3Cg id='Grupo_549' data-name='Grupo 549'%3E%3Crect id='Retângulo_16' data-name='Retângulo 16' width='3.425' height='1.468' transform='translate(39.971 24.56)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_552' data-name='Grupo 552'%3E%3Cg id='Grupo_551' data-name='Grupo 551'%3E%3Crect id='Retângulo_17' data-name='Retângulo 17' width='1.468' height='1.468' transform='translate(44.863 24.56)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__omnichannel:before {
+.page-service-individual .service-icon__omnichannel:before {
   background-image: url("data:image/svg+xml,%3Csvg id='omnichannel' xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cpath id='Caminho_3956' data-name='Caminho 3956' d='M4.839,16.129H8.065v1.613H4.839Zm0,0' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3957' data-name='Caminho 3957' d='M47.581,12.9A2.423,2.423,0,0,0,50,10.484V2.419A2.423,2.423,0,0,0,47.581,0H36.29a2.423,2.423,0,0,0-2.419,2.419v8.065A2.423,2.423,0,0,0,36.29,12.9H38.71v1.613H37.1v1.613h4.032v8.065H37.8a5.639,5.639,0,0,0-2.322-1.373c0-.082.006-.16.006-.239A6.447,6.447,0,0,0,23.6,19.114a6.418,6.418,0,0,0-2.631-.565,6.487,6.487,0,0,0-6.029,4.161,5.606,5.606,0,0,0-1.7.677H7.258V20.968h3.226A2.423,2.423,0,0,0,12.9,18.548V2.419A2.423,2.423,0,0,0,10.484,0H2.419A2.423,2.423,0,0,0,0,2.419V18.548a2.423,2.423,0,0,0,2.419,2.419H5.645V25h5.876a5.614,5.614,0,0,0-.784,1.613H7.258v8.871H4.032A2.423,2.423,0,0,0,1.613,37.9v7.258H0v2.419A2.423,2.423,0,0,0,2.419,50h12.9a2.423,2.423,0,0,0,2.419-2.419V45.161H16.129V37.9a2.423,2.423,0,0,0-2.419-2.419H8.871V28.226h1.613a5.653,5.653,0,0,0,5.645,5.645H33.871a5.649,5.649,0,0,0,5.581-4.839h3.29v6.452H37.1V50H50V35.484H44.355V27.419H39.448a5.582,5.582,0,0,0-.5-1.613h3.8V16.129h4.032V14.516H45.161V12.9Zm-36.29,0H1.613V4.839H11.29ZM2.419,1.613h8.065a.807.807,0,0,1,.806.806v.806H1.613V2.419A.807.807,0,0,1,2.419,1.613ZM1.613,18.548V14.516H11.29v4.032a.807.807,0,0,1-.806.806H2.419A.807.807,0,0,1,1.613,18.548ZM16.129,47.581a.807.807,0,0,1-.806.806H2.419a.807.807,0,0,1-.806-.806v-.806H16.129ZM14.516,37.9v7.258H3.226V37.9a.807.807,0,0,1,.806-.806H13.71A.807.807,0,0,1,14.516,37.9ZM38.71,48.387V43.548h9.677v4.839Zm9.677-6.452H38.71V37.1h9.677ZM33.871,32.258H16.129a4.031,4.031,0,0,1-.484-8.032l.529-.064.149-.512A4.825,4.825,0,0,1,23.5,20.883l.77.475.384-.82a4.828,4.828,0,0,1,9.155,2.789l-.122.8.8.121a4.03,4.03,0,0,1-.612,8.013ZM36.29,1.613h11.29a.807.807,0,0,1,.806.806V8.065h-12.9V2.419A.807.807,0,0,1,36.29,1.613Zm-.806,8.871V9.677h12.9v.806a.807.807,0,0,1-.806.806H36.29A.807.807,0,0,1,35.484,10.484Zm8.065,4.032H40.323V12.9h3.226Zm0,0' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3958' data-name='Caminho 3958' d='M40.323,38.71h1.613v1.613H40.323Zm0,0' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3959' data-name='Caminho 3959' d='M45.161,45.161h1.613v1.613H45.161Zm0,0' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3960' data-name='Caminho 3960' d='M43.548,38.71h3.226v1.613H43.548Zm0,0' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3961' data-name='Caminho 3961' d='M40.323,45.161h3.226v1.613H40.323Zm0,0' fill='%23ef7b5e'/%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__marketplace:before {
+.page-service-individual .service-icon__marketplace:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg id='marketplace' transform='translate(-1.667 -1.667)'%3E%3Cpath id='Caminho_3953' data-name='Caminho 3953' d='M49.167,8.333h-5V10h5a.834.834,0,0,1,.833.833V36.667a.834.834,0,0,1-.833.833h-45a.834.834,0,0,1-.833-.833V10.833A.834.834,0,0,1,4.167,10h5V8.333h-5a2.5,2.5,0,0,0-2.5,2.5V36.667a2.5,2.5,0,0,0,2.5,2.5h17.5v7.5H20a.833.833,0,0,0-.833.833v3.333a.833.833,0,0,0,.833.833H33.333a.833.833,0,0,0,.833-.833V47.5a.833.833,0,0,0-.833-.833H31.667v-7.5h17.5a2.5,2.5,0,0,0,2.5-2.5V10.833A2.5,2.5,0,0,0,49.167,8.333ZM32.5,50H20.833V48.333H32.5ZM30,46.667H23.333v-7.5h2.5V42.5a.833.833,0,0,0,1.667,0V39.167H30Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3954' data-name='Caminho 3954' d='M6.667,28.333V30h40V28.333H42.5V9.167a.833.833,0,0,0-.088-.373L39.079,2.127a.833.833,0,0,0-.745-.461H15a.833.833,0,0,0-.745.461L10.921,8.794a.833.833,0,0,0-.088.373V28.333Zm25,0v-10h5v10Zm4.167-16.667a1.667,1.667,0,1,1-3.333,0V10h3.333Zm-5,0a1.667,1.667,0,1,1-3.333,0V10h3.333Zm-5,0a1.667,1.667,0,1,1-3.333,0V10h3.333Zm-5,0a1.667,1.667,0,1,1-3.333,0V10h3.333ZM12.5,10h3.333v1.667a1.667,1.667,0,1,1-3.333,0ZM31.152,8.333H28.015l2.5-5h3.137Zm-5,0H23.015l2.5-5h3.137Zm-5,0H18.015l2.5-5h3.137ZM37.5,10h3.333v1.667a1.667,1.667,0,1,1-3.333,0Zm.515-1.667,1.152-2.3,1.152,2.3Zm.22-4.167L36.152,8.333H33.015l2.5-5h2.3Zm-22.72-.833h3.137l-2.5,5H13.015ZM12.5,14.552a3.325,3.325,0,0,0,4.167-.684,3.326,3.326,0,0,0,5,0,3.326,3.326,0,0,0,5,0,3.326,3.326,0,0,0,5,0,3.326,3.326,0,0,0,5,0,3.325,3.325,0,0,0,4.167.684V28.333h-2.5V17.5a.833.833,0,0,0-.833-.833H30.833A.833.833,0,0,0,30,17.5V28.333H12.5Z' fill='%23ef7b5e'/%3E%3Cpath id='Caminho_3955' data-name='Caminho 3955' d='M26.667,16.667H15.833A.833.833,0,0,0,15,17.5V25a.833.833,0,0,0,.833.833H26.667A.833.833,0,0,0,27.5,25V17.5a.833.833,0,0,0-.833-.833Zm-.833,7.5H16.667V18.333h9.167Z' fill='%23ef7b5e'/%3E%3Crect id='Retângulo_18' data-name='Retângulo 18' width='1.667' height='1.667' transform='translate(18.333 32.5)' fill='%23ef7b5e'/%3E%3Crect id='Retângulo_19' data-name='Retângulo 19' width='1.667' height='1.667' transform='translate(23.333 32.5)' fill='%23ef7b5e'/%3E%3Crect id='Retângulo_20' data-name='Retângulo 20' width='1.667' height='1.667' transform='translate(28.333 32.5)' fill='%23ef7b5e'/%3E%3Crect id='Retângulo_21' data-name='Retângulo 21' width='1.667' height='1.667' transform='translate(33.333 32.5)' fill='%23ef7b5e'/%3E%3Ccircle id='Elipse_2' data-name='Elipse 2' cx='0.833' cy='0.833' r='0.833' transform='translate(32.5 22.5)' fill='%23ef7b5e'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__growth:before {
+.page-service-individual .service-icon__growth:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg id='growth-data' transform='translate(-0.806 -0.806)'%3E%3Cg id='Grupo_522' data-name='Grupo 522'%3E%3Cpath id='Caminho_3897' data-name='Caminho 3897' d='M45.968,27.847V12.032a5.642,5.642,0,1,0-6.452-5.581H.806V38.71H25.041A12.895,12.895,0,1,0,45.968,27.847ZM45.161,2.419a4.032,4.032,0,1,1-4.032,4.032A4.037,4.037,0,0,1,45.161,2.419ZM2.419,8.065H39.754a5.641,5.641,0,0,0,.893,1.762l-4.932,4.932a2.335,2.335,0,0,0-2.073,0l-1.625-1.625a2.4,2.4,0,0,0,.242-1.037,2.419,2.419,0,1,0-4.839,0,2.38,2.38,0,0,0,.243,1.036l-4.044,4.044a2.4,2.4,0,0,0-1.037-.242A2.419,2.419,0,1,0,25,19.355a2.38,2.38,0,0,0-.243-1.036L28.8,14.274a2.339,2.339,0,0,0,2.073,0L32.5,15.9a2.4,2.4,0,0,0-.242,1.037,2.419,2.419,0,1,0,4.839,0,2.38,2.38,0,0,0-.243-1.036l4.933-4.932a5.611,5.611,0,0,0,2.568,1.066V26.747A12.825,12.825,0,0,0,28.226,29.4V25.806H23.387v9.677h1.848a12.937,12.937,0,0,0-.194,1.613H2.419Zm32.258,8.065a.806.806,0,1,1-.806.806A.807.807,0,0,1,34.677,16.129ZM29.032,12.1a.806.806,0,1,1,.806.806A.807.807,0,0,1,29.032,12.1Zm-5.645,7.258a.806.806,0,1,1-.806-.806A.807.807,0,0,1,23.387,19.355Zm14.516,25A6.452,6.452,0,1,1,44.355,37.9,6.459,6.459,0,0,1,37.9,44.355ZM26.613,31.67a12.806,12.806,0,0,0-.959,2.2H25V27.419h1.613ZM37.1,26.654V29.88a8.048,8.048,0,0,0-6.54,11.333l-2.8,1.615A11.252,11.252,0,0,1,37.1,26.654Zm.806,22.54a11.285,11.285,0,0,1-9.345-4.964l2.809-1.622a8.038,8.038,0,0,0,13.073,0l2.809,1.622A11.285,11.285,0,0,1,37.9,49.194Zm10.144-6.365-2.8-1.615A8.048,8.048,0,0,0,38.71,29.88V26.654a11.252,11.252,0,0,1,9.337,16.174Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3898' data-name='Caminho 3898' d='M37.9,33.065A4.839,4.839,0,1,0,42.742,37.9,4.844,4.844,0,0,0,37.9,33.065Zm0,8.065A3.226,3.226,0,1,1,41.129,37.9,3.229,3.229,0,0,1,37.9,41.129Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3899' data-name='Caminho 3899' d='M4.032,9.677H5.645V11.29H4.032Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3900' data-name='Caminho 3900' d='M7.258,9.677h11.29V11.29H7.258Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3901' data-name='Caminho 3901' d='M4.032,12.9H5.645v1.613H4.032Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3902' data-name='Caminho 3902' d='M7.258,12.9h11.29v1.613H7.258Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3903' data-name='Caminho 3903' d='M4.032,16.129H5.645v1.613H4.032Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3904' data-name='Caminho 3904' d='M7.258,16.129h11.29v1.613H7.258Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3905' data-name='Caminho 3905' d='M4.032,19.355H5.645v1.613H4.032Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3906' data-name='Caminho 3906' d='M7.258,19.355h11.29v1.613H7.258Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3907' data-name='Caminho 3907' d='M4.032,35.484H8.871V27.419H4.032Zm1.613-6.452H7.258v4.839H5.645Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3908' data-name='Caminho 3908' d='M10.484,35.484h4.839V29.032H10.484ZM12.1,30.645H13.71v3.226H12.1Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3909' data-name='Caminho 3909' d='M16.935,35.484h4.839v-12.9H16.935Zm1.613-11.29h1.613v9.677H18.548Z' fill='%235ebca4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__marketing:before {
+.page-service-individual .service-icon__marketing:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='49.18' height='50' viewBox='0 0 49.18 50'%3E%3Cg id='digital_marketing' data-name='digital marketing' transform='translate(-1.639 -0.82)'%3E%3Cpath id='Caminho_3962' data-name='Caminho 3962' d='M30.328,44.262H28.689V36.23a.82.82,0,0,0-1.639,0v8.033H5.738V27.869h6.82a.82.82,0,0,0,0-1.639H4.918a.82.82,0,0,0-.82.82V44.262H2.459a.82.82,0,0,0-.82.82v1.639a4.1,4.1,0,0,0,4.1,4.1H27.049a4.1,4.1,0,0,0,4.1-4.1V45.082A.82.82,0,0,0,30.328,44.262Zm-.82,2.459a2.459,2.459,0,0,1-2.459,2.459H25.41v-.82a.82.82,0,0,0-1.639,0v.82H9.016v-.82a.82.82,0,0,0-1.639,0v.82H5.738a2.459,2.459,0,0,1-2.459-2.459V45.9h26.23Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3963' data-name='Caminho 3963' d='M44.262,6.557H45.9a.82.82,0,0,0,0-1.639H44.262A2.459,2.459,0,0,0,41.8,7.377V8.2h-.82a.82.82,0,0,0,0,1.639h.82V12.3a.82.82,0,0,0,1.639,0V9.836h.82a.82.82,0,0,0,0-1.639h-.82v-.82A.82.82,0,0,1,44.262,6.557Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3964' data-name='Caminho 3964' d='M48.361,1.639H38.525A2.459,2.459,0,0,0,36.066,4.1V5.738a.82.82,0,1,0,1.639,0V4.1a.82.82,0,0,1,.82-.82h9.836a.82.82,0,0,1,.82.82v9.836a.82.82,0,0,1-.82.82H38.525a.82.82,0,0,1-.82-.82V9.016a.82.82,0,1,0-1.639,0v4.918a2.459,2.459,0,0,0,2.459,2.459h9.836a2.459,2.459,0,0,0,2.459-2.459V4.1a2.459,2.459,0,0,0-2.459-2.459Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3965' data-name='Caminho 3965' d='M40.164,34.426a3.279,3.279,0,1,0,3.279-3.279A3.279,3.279,0,0,0,40.164,34.426Zm4.918,0a1.639,1.639,0,1,1-1.639-1.639A1.639,1.639,0,0,1,45.082,34.426Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3966' data-name='Caminho 3966' d='M48.361,27.049H38.525a2.459,2.459,0,0,0-2.459,2.459v9.836A2.459,2.459,0,0,0,38.525,41.8h9.836a2.459,2.459,0,0,0,2.459-2.459V37.7a.82.82,0,0,0-1.639,0v1.639a.82.82,0,0,1-.82.82H38.525a.82.82,0,0,1-.82-.82V29.508a.82.82,0,0,1,.82-.82h9.836a.82.82,0,0,1,.82.82v4.918a.82.82,0,0,0,1.639,0V29.508a2.459,2.459,0,0,0-2.459-2.459Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3967' data-name='Caminho 3967' d='M20.057,11.352a.815.815,0,0,0,.8.033l4.918-2.459a.82.82,0,0,0,0-1.459L20.861,5.008a.82.82,0,0,0-1.189.73v4.918A.82.82,0,0,0,20.057,11.352Zm1.254-4.287L23.574,8.2,21.311,9.328Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3968' data-name='Caminho 3968' d='M22.131,15.574A7.377,7.377,0,1,0,14.754,8.2,7.377,7.377,0,0,0,22.131,15.574Zm0-13.115A5.738,5.738,0,1,1,16.393,8.2a5.738,5.738,0,0,1,5.738-5.738Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3969' data-name='Caminho 3969' d='M30.328,18.852a.82.82,0,0,0,.656-.328l2.459-3.279a.82.82,0,1,0-1.311-.984l-2.459,3.279a.82.82,0,0,0,.656,1.311Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3970' data-name='Caminho 3970' d='M32.131,21.8a.82.82,0,0,0,1.148.164l3.279-2.459a.82.82,0,1,0-.984-1.311L32.3,20.656a.82.82,0,0,0-.164,1.148Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3971' data-name='Caminho 3971' d='M40.164,23.607a.82.82,0,0,0-.984-.656l-4.1.82a.824.824,0,0,0,.164,1.639h.164l4.1-.82a.82.82,0,0,0,.656-.984Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3972' data-name='Caminho 3972' d='M2.459,23.77H12.3a.82.82,0,0,0,.82-.82V9.836a.82.82,0,0,0-.82-.82H2.459a.82.82,0,0,0-.82.82V22.951A.82.82,0,0,0,2.459,23.77Zm.82-13.115h8.2V22.131h-8.2Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3973' data-name='Caminho 3973' d='M9.016,12.3H7.377a.82.82,0,1,0,0,1.639H9.016a.82.82,0,0,0,0-1.639Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3974' data-name='Caminho 3974' d='M9.016,15.574H5.738a.82.82,0,1,0,0,1.639H9.016a.82.82,0,0,0,0-1.639Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3975' data-name='Caminho 3975' d='M9.016,18.852H5.738a.82.82,0,1,0,0,1.639H9.016a.82.82,0,0,0,0-1.639Z' fill='%235ebca4'/%3E%3Cpath id='Caminho_3976' data-name='Caminho 3976' d='M29.607,23.525a.822.822,0,0,0-1.426.82L31.8,30.6,18.68,35.516h-.123l-2.131,1.23-1.418.82a1.637,1.637,0,0,1-2.238-.6l-1.639-2.836a1.639,1.639,0,0,1,.615-2.164l2.836-1.639,2.049,3.549a.822.822,0,1,0,1.426-.82L15.943,29.4,26.23,20.918l.336.582a.822.822,0,0,0,1.426-.82l-.82-1.418a.831.831,0,0,0-1.238-.221L14.459,28.5l-3.492,2.016A3.279,3.279,0,0,0,9.459,34.23l-.82.467a2.457,2.457,0,0,0,1.23,4.59,2.508,2.508,0,0,0,1.23-.328l.82-.467a3.18,3.18,0,0,0,1.434.852,3.106,3.106,0,0,0,.861.115,3.23,3.23,0,0,0,1.639-.443l.713-.41L18.2,41.451a2.457,2.457,0,1,0,4.254-2.459l-1.492-2.6,12.3-4.615a.822.822,0,0,0,.426-1.172ZM10.246,37.533a.819.819,0,1,1-.82-1.418l.713-.41.82,1.418Zm10.787,2.3a.819.819,0,0,1-1.418.82L17.975,37.8l1.361-.779H19.4Z' fill='%235ebca4'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-icon__customer:before {
+.page-service-individual .service-icon__customer:before {
   background-image: url("data:image/svg+xml,%3Csvg id='customer' xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cpath id='Caminho_3910' data-name='Caminho 3910' d='M8.333,50a1.03,1.03,0,0,1-.4-.079,1.042,1.042,0,0,1-.642-.962v-6.25a1.042,1.042,0,0,1,2.083,0v3.736l4.472-4.472a1.037,1.037,0,0,1,.736-.305h31.25a2.086,2.086,0,0,0,2.084-2.084V10.417a2.086,2.086,0,0,0-2.084-2.084H40.625a1.042,1.042,0,1,1,0-2.083h5.208A4.171,4.171,0,0,1,50,10.417V39.583a4.171,4.171,0,0,1-4.167,4.167H15.015L9.07,49.695A1.044,1.044,0,0,1,8.333,50Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3911' data-name='Caminho 3911' d='M4.167,43.75A4.171,4.171,0,0,1,0,39.583V10.417A4.171,4.171,0,0,1,4.167,6.25H9.375a1.042,1.042,0,1,1,0,2.083H4.167a2.086,2.086,0,0,0-2.084,2.084V39.583a2.086,2.086,0,0,0,2.084,2.084,1.042,1.042,0,0,1,0,2.083Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3912' data-name='Caminho 3912' d='M39.583,26.042H38.542a1.042,1.042,0,1,1,0-2.084h1.041a2.086,2.086,0,0,0,2.084-2.083V19.792a2.086,2.086,0,0,0-2.084-2.084H38.542A1.041,1.041,0,0,1,37.5,16.667V14.583a12.5,12.5,0,1,0-25,0v2.084a1.042,1.042,0,0,1-2.083,0V14.583a14.583,14.583,0,1,1,29.166,0v1.042a4.171,4.171,0,0,1,4.167,4.167v2.083a4.171,4.171,0,0,1-4.167,4.167Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3913' data-name='Caminho 3913' d='M11.458,26.042H10.417A4.171,4.171,0,0,1,6.25,21.875V19.792a4.171,4.171,0,0,1,4.167-4.167h1.041A1.042,1.042,0,0,1,12.5,16.667V25A1.042,1.042,0,0,1,11.458,26.042Zm-1.041-8.334a2.086,2.086,0,0,0-2.084,2.084v2.083a2.086,2.086,0,0,0,2.084,2.083Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3914' data-name='Caminho 3914' d='M25,39.583a3.125,3.125,0,1,1,2.947-4.166h.178A9.385,9.385,0,0,0,37.5,26.042V20.833a1.042,1.042,0,0,1,2.083,0v5.209A11.472,11.472,0,0,1,28.125,37.5H27.083a1.041,1.041,0,0,1-1.041-1.042A1.042,1.042,0,1,0,25,37.5a1.042,1.042,0,1,1,0,2.083Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3915' data-name='Caminho 3915' d='M34.375,15.625a1.041,1.041,0,0,1-1.042-1.042,8.333,8.333,0,1,0-16.666,0,1.042,1.042,0,0,1-2.084,0,10.417,10.417,0,0,1,20.834,0A1.041,1.041,0,0,1,34.375,15.625Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3916' data-name='Caminho 3916' d='M19.792,27.083h2.083v2.084H19.792Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3917' data-name='Caminho 3917' d='M23.958,27.083h2.084v2.084H23.958Zm0,0' fill='%235ebca4'/%3E%3Cpath id='Caminho_3918' data-name='Caminho 3918' d='M28.125,27.083h2.083v2.084H28.125Zm0,0' fill='%235ebca4'/%3E%3C/svg%3E%0A");
 }
 
-.page-home .services-item__text {
+.page-service-individual .service-modules__text {
+  font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-}
-@media (min-width: 1026px) {
-  .page-home .services-item__text {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .services-item__text {
-    font-size: 14px;
-  }
-}
-/* FIM SERVIÇOS */
-
-/* OPERAÇÕES */
-.page-home .operations {
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 1025px) {
-  .page-home .operations {
-    flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-@media (min-width: 1026px) {
-  .page-home .operations-column {
-    padding-left: 40px;
-    padding-right: 15px;
-    width: 50%;
-    max-width: 705px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .operations-column {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1026px) {
-  .page-home .operations-image {
-    width: 50%;
-    max-width: 960px;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .operations-image {
-    width: 100%;
-    height: 180px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    order: 2;
-    margin-top: 30px;
-  }
-}
-
-.page-home .operations-href {
-  background: var(--tertiary);
-  border-radius: 5px;
   color: var(--primary);
-  font-weight: 600;
-  width: 100%;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  display: block;
-  text-align: center;
-  transition: 0.2s linear;
-  margin: 0 auto;
 }
-@media (min-width: 1026px) {
-  .page-home .operations-href {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 16px 25px 12px 25px;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .operations-href {
-    padding: 18px 25px 14px 25px;
-    font-size: 16px;
-    line-height: 16px;
-    margin: 15px auto 0 auto;
-  }
-}
-
-@media (min-width: 1026px) {
-  .page-home .operations-href:hover {
-    background: var(--fifth);
-  }
-}
-
-.page-home .operations-text {
-  color: var(--primary);
-  padding-bottom: 15px;
-  font-weight: 100;
-}
-@media (min-width: 1026px) {
-  .page-home .operations-text {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .operations-text {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-@media (min-width: 1026px) {
-  .page-home .operations .home-title {
-    margin-bottom: 45px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .operations .home-title {
-    margin-bottom: 30px;
-  }
-}
-/* FIM OPERAÇÕES */
-
-/* CASES */
-@media (min-width: 1026px) {
-  .page-home .cases {
-    padding-top: 100px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .cases {
-    padding-top: 60px;
-  }
-}
-
-.page-home .cases-columns {
-  padding-top: 70px;
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-}
-
-@media (min-width: 1026px) {
-  .page-home .cases-columns {
-    padding-top: 70px;
-  }
-}
-
-@media (max-width: 1025px) {
-  .page-home .cases-columns {
-    flex-direction: column;
-    padding-top: 30px;
-  }
-
-  .page-home .cases-column {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1026px) {
-  .page-home .cases-column.cases-column__middle {
-    margin-bottom: 100px;
-    margin-right: 45px;
-    margin-left: 45px;
-  }
-}
-
-.page-home .cases-card {
-  display: block;
-  position: relative;
-  max-width: 428px;
-}
-@media (min-width: 1026px) {
-  .page-home .cases-card {
-    margin: 0 auto 45px auto;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .cases-card {
-    margin: 0 auto 30px auto;
-  }
-}
-
-.page-home .cases-card__background {
-  position: relative;
-  transition: 0.3s linear;
-}
-
-.page-home .cases-card__background:after {
-  content: "";
-  background: linear-gradient(#00000000, #000);
-  height: 99%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-}
-
-@media (min-width: 1026px) {
-  .page-home .cases-card:hover .cases-card__background {
-    transform: scale(1.06);
-    transition: 0.3s linear;
-  }
-}
-
-.page-home .cases-card__image {
-  width: 100%;
-}
-
-.page-home .cases-card__content {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 35px 25px;
-}
-
-.page-home .cases-card__logo {
-  width: 100%;
-  display: block;
-  margin: 0 0 10px auto;
-}
-@media (min-width: 1026px) {
-  .page-home .cases-card__logo {
-    max-width: 138px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .cases-card__logo {
-    max-width: 105px;
-  }
-}
-
-.page-home .cases-card__title {
-  color: var(--primary);
-  font-weight: bold;
-}
-@media (min-width: 1026px) {
-  .page-home .cases-card__title {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .cases-card__title {
-    font-size: 15px;
-    line-height: 17px;
-  }
-}
-
-.page-home .cases-card__sector {
-  color: var(--primary);
-  font-weight: 100;
-}
-@media (min-width: 1026px) {
-  .page-home .cases-card__sector {
-    font-size: 30px;
-    line-height: 26px;
-    padding: 8px 0 5px 0;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .cases-card__sector {
-    font-size: 22px;
-    line-height: 24px;
-  }
-}
-
-.page-home .cases-card__area {
-  color: #b2a8cd;
-  font-weight: 600;
-}
-@media (min-width: 1026px) {
-  .page-home .cases-card__area {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .cases-card__area {
-    font-size: 15px;
-    line-height: 17px;
-  }
-}
-/* FIM CASES */
-
-/* PLATAFORMAS */
-@media (min-width: 1026px) {
-  .page-home .platforms {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .platforms {
-    padding-top: 30px;
-    padding-bottom: 60px;
-  }
-}
-
-.page-home .platforms-items {
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-@media (min-width: 1026px) {
-  .page-home .platforms-items {
-    justify-content: space-between;
-  }
-}
-
-.page-home .platforms-item {
-  margin: 0 30px 30px 0;
-}
-
-.page-home .platforms-image {
-  width: 100%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition: 0.2s linear;
-}
-@media (min-width: 1026px) {
-  .page-home .platforms-image {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
-  }
-}
-@media (max-width: 1025px) {
-  .page-home .platforms-image {
-    max-width: 120px;
-    max-height: 45px;
-    object-fit: contain;
-  }
-}
-
-@media (min-width: 1026px) {
-  .page-home .platforms-image:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
-}
-/* FIM PLATAFORMAS */

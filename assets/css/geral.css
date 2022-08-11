@@ -518,6 +518,10 @@ ul li {
 }
 
 /* VOLTAR PARA A HOME */
+.back-button {
+  position: fixed;
+  z-index: 9;
+}
 @media (min-width: 1026px) {
   .back-button {
     margin-top: 130px;
@@ -532,8 +536,6 @@ ul li {
 }
 
 .back-button__href {
-  position: fixed;
-  z-index: 9;
   background: var(--quaternary);
   border-radius: 7px;
   color: var(--primary);
