@@ -518,23 +518,6 @@ ul li {
 }
 
 /* VOLTAR PARA A HOME */
-.back-button {
-  position: fixed;
-  z-index: 9;
-}
-@media (min-width: 1026px) {
-  .back-button {
-    margin-top: 130px;
-    margin-bottom: 60px;
-  }
-}
-@media (max-width: 1025px) {
-  .back-button {
-    margin-top: 70px;
-    margin-bottom: 40px;
-  }
-}
-
 .back-button__href {
   background: var(--quaternary);
   border-radius: 7px;
@@ -542,6 +525,7 @@ ul li {
   display: block;
   width: max-content;
   transition: 0.2s linear;
+  position: absolute;
 }
 
 @media (min-width: 1026px) {
@@ -549,6 +533,7 @@ ul li {
     font-size: 13px;
     line-height: 13px;
     padding: 12px 15px 10px 15px;
+    margin-top: 40px;
   }
 
   .back-button__href:hover {
@@ -560,6 +545,7 @@ ul li {
     font-size: 12px;
     line-height: 12px;
     padding: 8px 10px 7px 10px;
+    margin-top: 20px;
   }
 }
 
