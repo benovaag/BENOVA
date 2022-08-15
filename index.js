@@ -18,3 +18,7 @@ app.get("/servicos", (req, res) => {
 app.get("/servicos/one-stop-shop", (req, res) => {
   res.sendFile(__dirname + "/service-oneStopShop.html");
 });
+
+app.get("/servicos/modular-management", (req, res) => {
+  res.sendFile(__dirname + "/service-modularManagement.html");
+});
