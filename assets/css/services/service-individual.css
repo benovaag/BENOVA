@@ -376,12 +376,10 @@
 /* BOTÃO CONVERSAR */
 .service-talk__button {
   background: var(--tertiary);
+  border: 1px solid var(--tertiary);
   border-radius: 5px;
   color: var(--primary);
   width: 100%;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -394,10 +392,12 @@
     font-size: 20px;
     line-height: 20px;
     padding: 16px 25px 12px 25px;
+    max-width: 348px;
   }
 
   .service-talk__button:hover {
     background: var(--fifth);
+    border: 1px solid var(--fifth);
   }
 }
 @media (max-width: 1025px) {
@@ -405,6 +405,7 @@
     padding: 18px 25px 14px 25px;
     font-size: 16px;
     line-height: 16px;
+    max-width: 290px;
   }
 }
 
@@ -415,4 +416,30 @@
   max-height: 0;
   overflow: hidden;
   padding: 0;
+}
+
+.page-service-individual .contact.contact-open {
+  transition: all 0.6s ease-in-out;
+  opacity: 1;
+  height: auto;
+  max-height: 999px;
+  overflow: hidden;
+  padding: 55px 0;
+}
+
+.page-service-individual .footer {
+  transition: all 0.6s ease-in-out;
+}
+.page-service-individual .footer.footer-close {
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.service-talk__open {
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
 }
