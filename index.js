@@ -38,3 +38,7 @@ app.get("/servicos/evolution", (req, res) => {
 app.get("/servicos/performance", (req, res) => {
   res.sendFile(__dirname + "/service-performance.html");
 });
+
+app.get("/modelo-de-negocios", (req, res) => {
+  res.sendFile(__dirname + "/business.html");
+});
