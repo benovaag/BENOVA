@@ -7,7 +7,7 @@ function initServices(elem, option) {
       ) {
         if (option == true) {
           var elementList = document.querySelectorAll(
-            elem + " .services-items"
+            elem + " .service-questions__answer"
           );
           Array.prototype.forEach.call(elementList, function (e) {
             e.classList.remove("service-questions__active");
