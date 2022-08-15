@@ -55,13 +55,16 @@
   max-width: 675px;
   display: block;
 }
-.page-one-stop-shop.page-service-individual .service-title:after {
+.page-one-stop-shop.page-service-individual .service-title:after,
+.page-deployment.page-service-individual .service-title:after {
   background: var(--secondary);
 }
-.page-modular-management.page-service-individual .service-title:after {
+.page-modular-management.page-service-individual .service-title:after,
+.page-evolution.page-service-individual .service-title:after {
   background: var(--quaternary);
 }
-.page-start.page-service-individual .service-title:after {
+.page-start.page-service-individual .service-title:after,
+.page-performance.page-service-individual .service-title:after {
   background: var(--tertiary);
 }
 
@@ -170,13 +173,16 @@
   height: 2px;
   display: block;
 }
-.page-one-stop-shop.page-service-individual .service-general__title:after {
+.page-one-stop-shop.page-service-individual .service-general__title:after,
+.page-deployment.page-service-individual .service-general__title:after {
   background: var(--secondary);
 }
-.page-modular-management.page-service-individual .service-general__title:after {
+.page-modular-management.page-service-individual .service-general__title:after,
+.page-evolution.page-service-individual .service-general__title:after {
   background: var(--quaternary);
 }
-.page-start.page-service-individual .service-general__title:after {
+.page-start.page-service-individual .service-general__title:after,
+.page-performance.page-service-individual .service-general__title:after {
   background: var(--tertiary);
 }
 

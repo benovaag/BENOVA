@@ -26,3 +26,15 @@ app.get("/servicos/modular-management", (req, res) => {
 app.get("/servicos/start", (req, res) => {
   res.sendFile(__dirname + "/service-start.html");
 });
+
+app.get("/servicos/deployment", (req, res) => {
+  res.sendFile(__dirname + "/service-deployment.html");
+});
+
+app.get("/servicos/evolution", (req, res) => {
+  res.sendFile(__dirname + "/service-evolution.html");
+});
+
+app.get("/servicos/performance", (req, res) => {
+  res.sendFile(__dirname + "/service-performance.html");
+});
