@@ -1,0 +1,257 @@
+/* BANNER */
+.page-case .case-banner {
+  position: relative;
+}
+
+.page-case .case-banner:after {
+  content: "";
+  background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0%
+    0% no-repeat padding-box;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page-case .case-banner__image {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 1025px) {
+  .page-case .case-banner__image {
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+.page-case .case-banner__texts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.page-case .case-banner__title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-case .case-banner__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-banner__title {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+
+.page-case .case-banner__title:after {
+  content: "";
+  width: 100%;
+  background: var(--secondary);
+  display: block;
+}
+@media (min-width: 1026px) {
+  .page-case .case-banner__title:after {
+    margin: 2px 0 8px 0;
+    max-width: 355px;
+    height: 7px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-banner__title:after {
+    margin: 5px 0 8px 0;
+    max-width: 170px;
+    height: 3px;
+  }
+}
+
+.page-case .case-banner__subtitle {
+  color: var(--primary);
+  font-weight: 100;
+}
+@media (min-width: 1026px) {
+  .page-case .case-banner__subtitle {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-banner__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+/* FIM BANNER */
+
+/* LOGO E TEXTO */
+.page-case .case-item {
+  display: flex;
+  align-items: flex-start;
+}
+@media (min-width: 1026px) {
+  .page-case .case-item {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+
+  .page-case .case-item__column {
+    width: 50%;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-item {
+    padding-top: 30px;
+    padding-bottom: 130px;
+    flex-direction: column;
+  }
+
+  .page-case .case-item__column {
+    width: 100%;
+  }
+}
+
+.page-case .case-item__title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-case .case-item__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-item__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.page-case .case-item__title:after {
+  content: "";
+  width: 100%;
+  background: var(--secondary);
+  display: block;
+}
+@media (min-width: 1026px) {
+  .page-case .case-item__title:after {
+    margin: 2px 0 8px 0;
+    max-width: 355px;
+    height: 7px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-item__title:after {
+    margin: 5px 0 8px 0;
+    max-width: 285px;
+    height: 3px;
+  }
+}
+
+.page-case .case-item__image {
+  width: 100%;
+  display: block;
+}
+@media (min-width: 1026px) {
+  .page-case .case-item__image {
+    max-width: 355px;
+    margin: 50px auto 0 auto;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-item__image {
+    max-width: 220px;
+    margin: 30px auto 30px auto;
+  }
+}
+
+.page-case .case-item__text {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-case .case-item__text {
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-item__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/* FIM LOGO E TEXTO */
+
+/* SEÇÃO COM BACKGROUND */
+.page-case .case-background__cabral {
+  background: #95111c;
+}
+
+.page-case .case-background__image {
+  width: 100%;
+  margin-top: -100px;
+}
+
+.page-case .case-background__columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (min-width: 1026px) {
+  .page-case .case-background__columns {
+    padding: 10px 0 50px 0;
+  }
+}
+@media (max-width: 1025px) {
+  .page-case .case-background__columns {
+    flex-direction: column;
+    padding: 15px 0 0 0;
+  }
+
+  .case-background__column {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 1026px) {
+  .page-case .case-background__column {
+    width: 46%;
+  }
+}
+
+.case-background__title,
+.case-background__text {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .case-background__title {
+    font-size: 35px;
+    line-height: 35px;
+    padding-bottom: 20px;
+  }
+
+  .case-background__text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 1025px) {
+  .case-background__title {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+
+  .case-background__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/* FIM SEÇÃO COM BACKGROUND */

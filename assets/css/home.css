@@ -55,7 +55,7 @@
 
 /* BANNER PRINCIPAL */
 .page-home .banner-main {
-  background: url("../images/banner-mainBackground.webp");
+  background: url("../images/home/home-bannerBackground.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

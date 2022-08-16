@@ -42,3 +42,7 @@ app.get("/servicos/performance", (req, res) => {
 app.get("/modelo-de-negocios", (req, res) => {
   res.sendFile(__dirname + "/business.html");
 });
+
+app.get("/cabral-motors", (req, res) => {
+  res.sendFile(__dirname + "/case-cabralMotors.html");
+});
