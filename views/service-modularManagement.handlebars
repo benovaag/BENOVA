@@ -1,39 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <link rel="icon" href="assets/images/favicon.png"/>
-
-    <title>Benova - Modular Management</title>
-    <meta name="description" content="Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!"/>
-
-    <base href="/BENOVA/">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/geral.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/services/service-individual.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/Font Awesome/css/all.css">
-</head>
-
 <body class="page-modular-management page-service-individual">
-    <header class="header">
-        <div class="content-large">
-            <div class="header-columns">
-                <a class="header-logo" href="/">
-                    <img class="header-logo__image" src="assets/images/header/header-logoBenova.png" alt="Benova - Digital Commerce Accelerator" title="Benova - Digital Commerce Accelerator">
-                </a>
-                <button class="header-menu" type="button">
-                    <img class="header-menu__image" src="assets/images/header/header-menu.png" alt="Menu" title="Menu">
-                </button>
-            </div>
+    <link rel="stylesheet" type="text/css" href="assets/css/services/service-individual.css">
 
-            <a class="back-button__href" href="/servicos">Voltar</a>
-        </div>
-    </header>
+    {{>header}}
 
     <main>
+        <a class="back-button__href" href="/servicos">Voltar</a>
+
         <section class="service-banner">
             <img class="service-banner__image" src="assets/images/services/service-bannerModularManagement.webp" alt="Modular Management" title="Modular Management">
         </section>
@@ -180,181 +152,11 @@
             <button class="service-talk__button" type="button" onclick="openForm()">Quero conversar com um consultor</button>
         </section>
 
-        <section class="contact">
-            <div class="content">
-                <div class="contact-column__text">
-                    <h2 class="contact-title">Comece agora e<br>acelere seu negócio digital.</h2>
-                    <p class="contact-subtitle">
-                        Potencializamos ideias e projetos, orientando o processo de evolução com soluções concretas.
-                    </p>
-                </div>
-    
-                <div class="contact-column__form">
-                    <form class="form">
-                        <input type="text" name="name" placeholder="Qual seu nome?" class="form-field">                    
-                        <input type="text" name="email" placeholder="Qual seu e-mail?" class="form-field">
-                        <input type="text" name="mobile_phone" placeholder="Celular" class="form-field">
-                        <input type="text" name="site" placeholder="Sua empresa" class="form-field">
-                        
-                        <select name="mercado" class="form-field">
-                            <option value="Mercado que atua" disabled selected>Mercado que atua</option>
-                            <option value="Alimentos e bebidas">Alimentos e bebidas</option>
-                            <option value="Automotivo">Automotivo</option>
-                            <option value="Brinquedos e games">Brinquedos e games</option>
-                            <option value="Calçados">Calçados</option>
-                            <option value="Casa e decoração">Casa e decoração</option>
-                            <option value="Cosméticos e perfumaria">Cosméticos e perfumaria</option>
-                            <option value="Eletrodomésticos">Eletrodomésticos</option>
-                            <option value="Esporte e lazer">Esporte e lazer</option>
-                            <option value="Farmacêutico">Farmacêutico</option>
-                            <option value="Ferramentas e construção">Ferramentas e construção</option>
-                            <option value="Indústria">Indústria</option>
-                            <option value="Informática e telefonia">Informática e telefonia</option>
-                            <option value="Livros e papelaria">Livros e papelaria</option>
-                            <option value="Moda e acessórios">Moda e acessórios</option>
-                            <option value="Pet">Pet</option>
-                            <option value="Produtos e serviços agrícolas">Produtos e serviços agrícolas</option>
-                            <option value="Saúde e bem estar">Saúde e bem estar</option>
-                            <option value="Supermercado e atacadista">Supermercado e atacadista</option>
-                            <option value="Multi Departamentos">Multi Departamentos</option>
-                            <option value="Outros">Outros</option>
-                        </select>
-    
-                        <select name="faturamento" class="form-field">
-                            <option value="Faturamento médio mensal" disabled selected>Faturamento médio mensal</option>
-                            <option value="R$0 a R$100.000">R$0 a R$100.000</option>
-                            <option value="R$100.000 a R$250.000">R$100.000 a R$250.000</option>
-                            <option value="R$250.000 a R$500.000">R$250.000 a R$500.000</option>
-                            <option value="R$500.000 a R$1MI">R$500.000 a R$1MI</option>
-                            <option value="R$1MI a 3MI">R$1MI a 3MI</option>
-                            <option value="Acima de R$3MI">Acima de R$3MI</option>
-                        </select>
-        
-                        <select name="porte" class="form-field">
-                            <option value="Porte da empresa" disabled selected>Porte da empresa</option>
-                            <option value="Até 9 funcionários">Até 9 funcionários</option>
-                            <option value="De 10 a 49 funcionários">De 10 a 49 funcionários</option>
-                            <option value="De 50 a 99 funcionários">De 50 a 99 funcionários</option>
-                            <option value="100 ou mais funcionários">100 ou mais funcionários</option>
-                        </select>
-    
-                        <select name="modelo" class="form-field">
-                            <option value="Modelo de negócio" disabled selected>Modelo de negócio</option>
-                            <option value="B2B - Atacado">B2B - Atacado</option>
-                            <option value="B2C - Varejo">B2C - Varejo</option>
-                            <option value="B2B/B2C - Atacado/Varejo">B2B/B2C - Atacado/Varejo</option>
-                        </select>
-    
-                        <textarea name="sobre" placeholder="Nos conte um pouco sobre o seu negócio" class="form-field__textarea"></textarea>
-        
-                        <!-- <input type="hidden" name="token_rdstation" value="5e9a5a07c6e2ca00cafea124b124be85"> -->
-                        <input type="hidden" name="identificador" value="[Site] Fale com a Benova">
-        
-                        <div class="form-button">
-                            <button class="form-button__submit" type="submit" onclick="alert('Mensagem enviada com sucesso!')">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+        {{>form}}
     </main>
 
-    <footer class="footer">
-        <div class="content">
-            <div class="footer-logo">
-                <h3 class="footer-logo__text">Digital Commerce Accelerator</h3>
-                <a class="footer-logo__href" href="/" title="Benova - Gestão ponta a ponta do seu e-commerce">
-                    <img class="footer-logo__image" src="assets/images/footer/footer-logoBenova.png" alt="Benova" title="Benova - Gestão ponta a ponta do seu e-commerce" loading="lazy">
-                </a>
-            </div>
+    {{>footer}}
 
-            <div class="footer-columns">
-                <ul class="footer-column">
-                    <li class="footer-item">
-                        <address>
-                            <a class="footer-text" target="_blank" href="https://goo.gl/maps/5J5pcUrK3BXCXiXW6">
-                                Rua Zelia Moura dos Santos, 101<br>Sala 421, 4º Andar<br>Cristo Rei - Curitiba - PR<br>Cep.: 80.050-605
-                            </a>
-                        </address>
-                    </li>
-                </ul>
-
-                <ul class="footer-column">
-                    <li class="footer-item">
-                        <a class="footer-text" target="_blank" href="mailto:oi@benova.ag" title="E-mail">E-mail: oi@benova.ag</a>
-                    </li>
-                    <li class="footer-item">
-                        <a class="footer-text" target="_blank" href="https://wa.me/5541995223266" title="Whatsapp">WhatsApp: (41) 99522-3266</a>
-                    </li>
-                    <li  class="footer-item">
-                        <a class="footer-text" target="_blank" href="tel:+554135006820" title="Telefone">Telefone: (41) 3500-6820</a>
-                    </li>
-                </ul>
-
-                <ul class="footer-column">
-                    <li class="footer-title">Parceiros</li>
-                    <li class="footer-item">
-                        <ul class="footer-partners">
-                            <li class="footer-partners__item">
-                                <a class="footer-partners__href" target="_blank" href="https://vtex.com/" title="Plataforma VTEX de comércio para Ecommerce B2B & B2C, Marketplace, OMS e mais">
-                                    <img class="footer-partners__image" src="assets/images/footer/footer-partnersVtex.png" alt="VTEX" title="Plataforma VTEX de comércio para Ecommerce B2B & B2C, Marketplace, OMS e mais" loading="lazy">
-                                </a>
-                            </li>
-                            <li class="footer-partners__item">
-                                <a class="footer-partners__href" target="_blank" href="https://www.totvs.com/" title="TOTVS - A maior empresa de tecnologia do Brasil">
-                                    <img class="footer-partners__image" src="assets/images/footer/footer-partnersTotvs.png" alt="TOTVS" title="TOTVS - A maior empresa de tecnologia do Brasil" loading="lazy">
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="footer-column">
-                    <li class="footer-title">Siga-nos</li>
-                    <li class="footer-item">
-                        <ul class="footer-social">
-                            <li class="footer-social__item">
-                                <a class="footer-social__href" target="_blank" href="https://www.facebook.com/benova.digital/" title="Facebook">
-                                    <span class="footer-social__icon footer-social__facebook"></span>
-                                </a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__href" target="_blank" href="https://www.linkedin.com/company/benova%C2%AE-digital-experience" title="LinkedIn">
-                                    <span class="footer-social__icon footer-social__linkedin"></span>
-                                </a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__href" target="_blank" href="https://www.instagram.com/benova.ag/" title="Instagram">
-                                    <span class="footer-social__icon footer-social__instagram"></span>
-                                </a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__href" target="_blank" href="https://open.spotify.com/show/6nL1CiPCaRYqtef56McNJp" title="Spotify">
-                                    <span class="footer-social__icon footer-social__spotify"></span>
-                                </a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__href" target="_blank" href="https://www.deezer.com/br/show/2296962" title="Deezer">
-                                    <span class="footer-social__icon footer-social__deezer"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="footer-column__gptw">
-                    <li class="footer-item">
-                        <a class="footer-gptw__href" target="_blank" href="https://certificadas.gptw.com.br/certificada/benova" title="Great Place To Work">
-                            <img class="foooter-gptw__image" src="assets/images/footer/footer-stampGptw.png" alt="Great Place To Work" title="Great Place To Work" loading="lazy">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="assets/js/newsletter.js"></script>
     <script type="text/javascript" src="assets/js/service/service-individualQuestions.js"></script>
     <script type="text/javascript" src="assets/js/service/service-individualForm.js"></script>
 </body>
-</html>
