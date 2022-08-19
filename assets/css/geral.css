@@ -73,6 +73,7 @@ ul li {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
 }
 
 .content-small {
@@ -533,7 +534,8 @@ ul li {
   display: block;
   width: max-content;
   transition: 0.2s linear;
-  position: absolute;
+  position: fixed;
+  z-index: 9;
 }
 
 @media (min-width: 1026px) {
@@ -541,7 +543,7 @@ ul li {
     font-size: 13px;
     line-height: 13px;
     padding: 12px 15px 10px 15px;
-    margin-top: 40px;
+    top: 130px;
   }
 
   .back-button__href:hover {
@@ -553,7 +555,7 @@ ul li {
     font-size: 12px;
     line-height: 12px;
     padding: 8px 10px 7px 10px;
-    margin-top: 20px;
+    top: 70px;
   }
 }
 
