@@ -1,24 +1,35 @@
-function initServices(elem, option) {
-  document.addEventListener("click", function (e) {
-    if (!e.target.matches(elem + " .services-header")) return;
-    else {
-      if (
-        !e.target.parentElement.classList.contains("services-column__active")
-      ) {
-        if (option == true) {
-          var elementList = document.querySelectorAll(
-            elem + " .services-items"
-          );
-          Array.prototype.forEach.call(elementList, function (e) {
-            e.classList.remove("services-column__active");
-          });
-        }
-        e.target.parentElement.classList.add("services-column__active");
-      } else {
-        e.target.parentElement.classList.remove("services-column__active");
-      }
-    }
-  });
-}
+const homeServices = (()=>{
 
-initServices(".services-column", true);
+  const services = document.querySelectorAll(".services-header")
+  services?.forEach(item => {
+    item.addEventListener("click", ()=> {
+
+      //Verifica se o item já estga ativo
+      if(item
+      ?.closest(".services-column")
+      ?.classList
+      .contains("services-column__active")) {
+        removeClassAtivo();
+      return;
+      }
+      
+      removeClassAtivo()
+      ativaNovoItem()
+      
+      //Fecho qualquer outro item que esteja aberto
+      function removeClassAtivo() {
+        document.querySelector(".services-column__active")
+        ?.classList.remove("services-column__active");
+      }
+
+      //Adiciona a classe no novo item
+      function ativaNovoItem() {
+        item
+        ?.closest(".services-column")
+        ?.classList.add("services-column__active");
+      }
+
+    })
+  })
+
+})()
