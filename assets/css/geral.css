@@ -6,6 +6,7 @@
   outline: none;
   text-decoration: none;
   font-family: var(--font-main-light);
+  font-style: normal;
 }
 
 html,
@@ -154,6 +155,13 @@ ul li {
 }
 
 /* FORMULÁRIO */
+.contact:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -10px 0 0;
+}
+
 .contact {
   background: var(--bg-secondary);
 }
