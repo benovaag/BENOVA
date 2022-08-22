@@ -18,6 +18,12 @@
   width: 100%;
   display: block;
 }
+@media (min-width: 1026px) {
+  .page-case .case-banner__image {
+    max-height: 600px;
+    object-fit: cover;
+  }
+}
 @media (max-width: 1025px) {
   .page-case .case-banner__image {
     height: 250px;
@@ -192,6 +198,25 @@
 /* SEÇÃO COM BACKGROUND */
 .page-case .case-background__cabral {
   background: #95111c;
+}
+.page-case .case-background__branco {
+  background: #fff;
+}
+.page-case .case-background__branco .case-background__title,
+.page-case .case-background__branco .case-background__text {
+  color: #000;
+}
+.case-background.case-background__gmad {
+  background: #3b764e;
+}
+.case-background.case-background__crocs {
+  background: #75b709;
+}
+.case-background.case-background__dex {
+  background: #45545f;
+}
+.case-background.case-background__bobinex {
+  background: #6cbfca;
 }
 
 .page-case .case-background__image {

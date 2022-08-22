@@ -91,4 +91,49 @@ Router.get("/cabral-motors", (req, res) => {
   });
 });
 
+Router.get("/branco", (req, res) => {
+  res.render("case-branco", {
+    title: "Benova - Branco",
+    description:
+      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+    url: "/branco",
+  });
+});
+
+Router.get("/gmad", (req, res) => {
+  res.render("case-gmad", {
+    title: "Benova - GMAD",
+    description:
+      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+    url: "/gmad",
+  });
+});
+
+Router.get("/crocs", (req, res) => {
+  res.render("case-crocs", {
+    title: "Benova - Crocs",
+    description:
+      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+    url: "/crocs",
+  });
+});
+
+Router.get("/dex", (req, res) => {
+  res.render("case-dex", {
+    title: "Benova - Dex",
+    description:
+      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+    url: "/dex",
+  });
+});
+
+Router.get("/uau-bobinex", (req, res) => {
+  res.render("case-bobinex", {
+    title: "Benova - Uau Bobinex",
+    description:
+      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+    url: "/uau-bobinex",
+  });
+});
+
 module.exports = Router;
