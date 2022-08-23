@@ -1,0 +1,22 @@
+@media (min-width: 1026px) {
+  .page-benova .menu-item__content {
+    margin: 220px 0 100px 0;
+  }
+}
+@media (max-width: 1025px) {
+  .page-benova .menu-item__content {
+    margin: 130px 0 100px 0;
+  }
+
+  .page-benova .menu-content__item {
+    width: 42%;
+  }
+}
+
+.page-benova .menu-content__items.menu-content__history {
+  padding: 30px 0 50px 0;
+}
+
+.page-benova .menu-item__content .content-menu {
+  max-width: 100%;
+}

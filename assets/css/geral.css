@@ -85,6 +85,11 @@ ul li {
   padding-right: 15px;
 }
 
+.content-menu {
+  width: 100%;
+  max-width: 1200px;
+}
+
 /* HEADER */
 .header {
   position: fixed;
@@ -173,13 +178,20 @@ ul li {
 .menu-fechar {
   position: absolute;
   right: 15px;
-  top: 30px;
   z-index: 9;
+}
+@media (min-width: 1026px) {
+  .menu-fechar {
+    top: 30px;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-fechar {
+    top: 10px;
+  }
 }
 
 .menu-fechar__button {
-  background: var(--secondary);
-  border: 1px solid var(--secondary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -188,12 +200,16 @@ ul li {
 }
 @media (min-width: 1026px) {
   .menu-fechar__button {
+    background: var(--secondary);
+    border: 1px solid var(--secondary);
     height: 52px;
     width: 52px;
   }
 }
 @media (max-width: 1025px) {
   .menu-fechar__button {
+    background: var(--bg-main);
+    border: 1px solid var(--bg-main);
     height: 40px;
     width: 40px;
   }
@@ -203,56 +219,130 @@ ul li {
   max-width: 60%;
 }
 
-.menu-logo {
-  padding-bottom: 65px;
+@media (min-width: 1026px) {
+  .menu-logo {
+    padding-bottom: 65px;
+  }
+  .menu-logo__image {
+    width: 100%;
+    max-width: 192px;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-logo {
+    padding-bottom: 35px;
+    padding-right: 45px;
+  }
+  .menu-logo__image {
+    width: 100%;
+    max-width: 126px;
+  }
 }
 
 .menu-item__title {
-  font-size: 26px;
-  line-height: 26px;
-  color: #ffffff;
+  color: var(--primary);
   font-weight: 600;
-  padding-bottom: 30px;
-  display: block;
   transition: 0.2s linear;
+}
+@media (min-width: 1026px) {
+  .menu-item__title {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-item__title:after {
+    content: "";
+    height: 18px;
+    width: 0;
+    max-width: 110px;
+    background: var(--quaternary);
+    margin-top: -15px;
+    z-index: -1;
+    transition: 0.9s linear;
+  }
+  .menu-item__title:hover:after {
+    width: 100%;
+    transition: 0.9s linear;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-item__title {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
 }
 
 .menu-items {
-  padding: 30px 40px;
   height: 100%;
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+@media (min-width: 1026px) {
+  .menu-items {
+    padding: 30px 40px;
+    width: 400px;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-items {
+    padding: 15px;
+    width: 100%;
+  }
 }
 
-.menu-item__list {
-  position: fixed;
-  background: #222222;
+.menu-items::-webkit-scrollbar {
+  width: 5px;
+  background: var(--secondary);
+}
+.menu-items::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+.menu-items::-webkit-scrollbar-thumb {
+  background: rgb(76 44 112 / 60%);
+  border-radius: 5px;
+}
+
+.menu-bottom {
   height: 100%;
-  top: 0;
-  right: 0;
-  width: 80%;
-  padding: 150px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .menu-social {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .menu-social__icon:before {
   content: "";
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
   display: block;
   transition: 0.2s linear;
-  margin: 0 12px 10px 0;
+  margin: 0 12px 10px 12px;
 }
 
 @media (min-width: 1026px) {
+  .menu-social__icon:before {
+    width: 25px;
+    height: 25px;
+  }
   .menu-social__icon:hover:before {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 1025px) {
+  .menu-social__icon:before {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -274,6 +364,158 @@ ul li {
 
 .menu-social__deezer:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_140' data-name='Retângulo 140' width='25' height='25' transform='translate(1171 5687)' fill='%23fff' stroke='%23707070' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='icon-deezer' transform='translate(-1171 -5687)' clip-path='url(%23clip-path)'%3E%3Cg id='deezer-symbol' transform='translate(1183.5 5699.5)'%3E%3Cg id='deezer-symbol-2' data-name='deezer-symbol' transform='translate(-12.5 -6.975)'%3E%3Cg id='Grupo_570' data-name='Grupo 570'%3E%3Crect id='Retângulo_142' data-name='Retângulo 142' width='4.558' height='1.381' transform='translate(0 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_143' data-name='Retângulo 143' width='4.558' height='1.382' transform='translate(0 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_144' data-name='Retângulo 144' width='4.558' height='1.382' transform='translate(0 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_145' data-name='Retângulo 145' width='4.558' height='1.381' transform='translate(0 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_146' data-name='Retângulo 146' width='4.558' height='1.381' transform='translate(0 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_147' data-name='Retângulo 147' width='4.558' height='1.381' transform='translate(5.11 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_148' data-name='Retângulo 148' width='4.558' height='1.382' transform='translate(5.11 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_149' data-name='Retângulo 149' width='4.558' height='1.382' transform='translate(5.11 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_150' data-name='Retângulo 150' width='4.558' height='1.381' transform='translate(10.221 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_151' data-name='Retângulo 151' width='4.558' height='1.382' transform='translate(10.221 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_152' data-name='Retângulo 152' width='4.558' height='1.382' transform='translate(10.221 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_153' data-name='Retângulo 153' width='4.558' height='1.381' transform='translate(10.221 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_154' data-name='Retângulo 154' width='4.558' height='1.381' transform='translate(10.221 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_155' data-name='Retângulo 155' width='4.558' height='1.381' transform='translate(10.221 3.592)' fill='%23fff'/%3E%3Crect id='Retângulo_156' data-name='Retângulo 156' width='4.558' height='1.381' transform='translate(10.221 1.796)' fill='%23fff'/%3E%3Crect id='Retângulo_157' data-name='Retângulo 157' width='4.558' height='1.381' transform='translate(15.331 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_158' data-name='Retângulo 158' width='4.558' height='1.382' transform='translate(15.331 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_159' data-name='Retângulo 159' width='4.558' height='1.382' transform='translate(15.331 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_160' data-name='Retângulo 160' width='4.558' height='1.381' transform='translate(15.331 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_161' data-name='Retângulo 161' width='4.558' height='1.381' transform='translate(15.331 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_162' data-name='Retângulo 162' width='4.558' height='1.381' transform='translate(20.442 12.569)' fill='%23fff'/%3E%3Crect id='Retângulo_163' data-name='Retângulo 163' width='4.558' height='1.382' transform='translate(20.442 10.774)' fill='%23fff'/%3E%3Crect id='Retângulo_164' data-name='Retângulo 164' width='4.558' height='1.381' transform='translate(20.442 8.978)' fill='%23fff'/%3E%3Crect id='Retângulo_165' data-name='Retângulo 165' width='4.558' height='1.381' transform='translate(20.442 7.183)' fill='%23fff'/%3E%3Crect id='Retângulo_166' data-name='Retângulo 166' width='4.558' height='1.381' transform='translate(20.442 5.387)' fill='%23fff'/%3E%3Crect id='Retângulo_167' data-name='Retângulo 167' width='4.558' height='1.381' transform='translate(20.442 3.592)' fill='%23fff'/%3E%3Crect id='Retângulo_168' data-name='Retângulo 168' width='4.558' height='1.381' transform='translate(20.442 1.796)' fill='%23fff'/%3E%3Crect id='Retângulo_169' data-name='Retângulo 169' width='4.558' height='1.381' transform='translate(20.442)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+/* SEÇÕES DO MENU */
+.menu .menu-item__content {
+  position: fixed;
+  background: var(--bg-main);
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: calc(100% - 400px);
+  padding: 150px 70px;
+  overflow-y: auto;
+}
+.menu .menu-item__content::-webkit-scrollbar {
+  width: 5px;
+  background: var(--bg-main);
+}
+.menu .menu-item__content::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+.menu .menu-item__content::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+}
+
+.menu-content__title {
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1026px) {
+  .menu-content__title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-content__title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.menu-content__title:after {
+  content: "";
+  height: 18px;
+  width: 100%;
+  max-width: 110px;
+  margin-top: -15px;
+  z-index: -1;
+  transition: 0.9s linear;
+}
+.menu-color__one:after {
+  background: var(--secondary);
+}
+.menu-color__two:after {
+  background: var(--quaternary);
+}
+.menu-color__three:after {
+  background: var(--tertiary);
+}
+.menu .menu-content__items.menu-content__business .menu-content__title:after,
+.menu .menu-content__items.menu-content__services .menu-content__title:after {
+  max-width: 20px;
+}
+
+.menu-content__text {
+  line-height: 26px;
+  color: var(--primary);
+  padding: 30px 0;
+}
+@media (min-width: 1026px) {
+  .menu-content__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-content__text {
+    font-size: 18px;
+  }
+}
+
+.menu-content__subtitle {
+  line-height: 22px;
+  color: var(--primary);
+  padding-top: 15px;
+}
+@media (min-width: 1026px) {
+  .menu-content__subtitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-content__subtitle {
+    font-size: 18px;
+  }
+}
+
+.menu-content__items.menu-content__services .menu-content__subtitle,
+.menu-content__items.menu-content__business .menu-content__subtitle {
+  max-width: 230px;
+}
+
+.menu-content__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-content__items.menu-content__history {
+  padding: 30px 0 10px 0;
+}
+
+.menu-content__item {
+  width: 30%;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-content__items.menu-content__services .menu-content__item {
+  margin-bottom: 90px;
+}
+
+.menu-content__button {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.menu-content__href {
+  background: var(--tertiary);
+  color: var(--primary);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 165px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 0 10px 0;
+  margin-top: 20px;
+  transition: 0.2s linear;
+}
+
+.menu-content__href:hover {
+  background: var(--fifth);
+}
+@media (max-width: 1025px) {
+  .menu .menu-item__content {
+    display: none;
+  }
 }
 
 /* FORMULÁRIO */

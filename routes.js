@@ -10,6 +10,15 @@ Router.get("/", (req, res) => {
   });
 });
 
+Router.get("/benova", (req, res) => {
+  res.render("benova", {
+    title: "Benova - Gestão ponta a ponta do seu ecommerce",
+    description:
+      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+    url: "/",
+  });
+});
+
 Router.get("/servicos", (req, res) => {
   res.render("services", {
     title: "Benova - Serviços",
