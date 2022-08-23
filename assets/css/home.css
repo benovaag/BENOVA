@@ -437,7 +437,7 @@
   align-items: center;
   position: absolute;
   left: 15px;
-  background: #222222;
+  background: var(--bg-main);
   padding: 0 10px;
 }
 @media (min-width: 1026px) {
@@ -528,7 +528,7 @@
 
 .page-home .services-item__text {
   line-height: 20px;
-  color: #ffffff;
+  color: var(--primary);
 }
 @media (min-width: 1026px) {
   .page-home .services-item__text {

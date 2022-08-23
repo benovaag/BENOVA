@@ -266,7 +266,7 @@
 .service-icon {
   position: absolute;
   left: 15px;
-  background: #222222;
+  background: var(--bg-main);
   padding: 0 10px;
   display: block;
   font-size: 23px;
