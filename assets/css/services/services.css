@@ -237,8 +237,8 @@
 }
 @media (min-width: 1026px) {
   .page-services .services-texts__middle {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 @media (max-width: 1025px) {
@@ -257,13 +257,13 @@
 }
 @media (min-width: 1026px) {
   .page-services .services-texts__small {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 @media (max-width: 1025px) {
   .page-services .services-texts__small {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
   }
 }
@@ -280,13 +280,13 @@
 }
 @media (min-width: 1026px) {
   .page-services .services-item__list {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 @media (max-width: 1025px) {
   .page-services .services-item__list {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
   }
 }

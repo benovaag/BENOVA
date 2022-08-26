@@ -50,8 +50,8 @@
 }
 @media (max-width: 1025px) {
   .page-case .case-banner__title {
-    font-size: 13px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -60,19 +60,18 @@
   width: 100%;
   background: var(--secondary);
   display: block;
+  height: 2px;
 }
 @media (min-width: 1026px) {
   .page-case .case-banner__title:after {
     margin: 2px 0 8px 0;
-    max-width: 355px;
-    height: 7px;
+    max-width: 300px;
   }
 }
 @media (max-width: 1025px) {
   .page-case .case-banner__title:after {
     margin: 5px 0 8px 0;
     max-width: 170px;
-    height: 3px;
   }
 }
 
@@ -82,15 +81,15 @@
 }
 @media (min-width: 1026px) {
   .page-case .case-banner__subtitle {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 25px;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 1025px) {
   .page-case .case-banner__subtitle {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
     margin-bottom: 15px;
   }
 }
@@ -128,8 +127,9 @@
 }
 @media (min-width: 1026px) {
   .page-case .case-item__title {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 30px;
+    max-width: 610px;
   }
 }
 @media (max-width: 1025px) {

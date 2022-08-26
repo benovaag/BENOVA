@@ -725,7 +725,7 @@
 .page-home .cases-card__background:after {
   content: "";
   background: linear-gradient(#00000000, #000);
-  height: 99%;
+  height: 100%;
   width: 100%;
   position: absolute;
   left: 0;

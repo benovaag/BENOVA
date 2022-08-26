@@ -23,7 +23,7 @@ Router.get("/outsourcing", (req, res) => {
   res.render("outsourcing", {
     title: "Benova - Outsourcing",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Terceirize serviços estratégicos com a Benova, diminua seus custos e melhore a eficiência de sua operação.",
     url: "/outsourcing",
   });
 });
@@ -32,7 +32,7 @@ Router.get("/servicos", (req, res) => {
   res.render("services", {
     title: "Benova - Serviços",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Gestão completa para o seu comércio digital, ou serviços modulares que se adaptam ao momento da sua empresa.",
     url: "/servicos",
   });
 });
@@ -41,7 +41,7 @@ Router.get("/servicos/one-stop-shop", (req, res) => {
   res.render("service-oneStopShop", {
     title: "Benova - One-Stop Shop",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Desenvolver, controlar e otimizar a experiência do usuário de maneira inovadora e humanizada, são os principais pilares da estratégia do One-Stop Shop.",
     url: "/servicos/one-stop-shop",
   });
 });
@@ -50,7 +50,7 @@ Router.get("/servicos/modular-management", (req, res) => {
   res.render("service-modularManagement", {
     title: "Benova - Modular Management",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Customize as operações de seu negócio online com um conceito On Demand, onde você escolhe os serviços que mais se encaixam em sua estratégia digital.",
     url: "/servicos/modular-management",
   });
 });
@@ -59,7 +59,7 @@ Router.get("/servicos/start", (req, res) => {
   res.render("service-start", {
     title: "Benova - Start",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Consultorias dedicadas para a evolução de sua operação digital.",
     url: "/servicos/start",
   });
 });
@@ -68,7 +68,7 @@ Router.get("/servicos/deployment", (req, res) => {
   res.render("service-deployment", {
     title: "Benova - Deployment",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Auxiliamos você a optar pela plataforma ideal para sua loja online, considerando Escabilidade, Facilidade, Segurança, Custo, Flexibilidade e Conformidade.",
     url: "/servicos/deployment",
   });
 });
@@ -77,7 +77,7 @@ Router.get("/servicos/evolution", (req, res) => {
   res.render("service-evolution", {
     title: "Benova - Evolution",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Dê mais um passo e evolua de forma integrada trazendo mais resultados ao seu negócio digital.",
     url: "/servicos/evolution",
   });
 });
@@ -86,7 +86,7 @@ Router.get("/servicos/performance", (req, res) => {
   res.render("service-performance", {
     title: "Benova - Performance",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Consultorias dedicadas para a evolução de sua operação digital.",
     url: "/servicos/performance",
   });
 });
@@ -95,7 +95,7 @@ Router.get("/modelo-de-negocios", (req, res) => {
   res.render("business", {
     title: "Benova - Modelo de Negócios",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Estruturamos como sua empresa cria, entrega e captura valor para o seu cliente.",
     url: "/modelo-de-negocios",
   });
 });
@@ -104,7 +104,7 @@ Router.get("/cabral-motors", (req, res) => {
   res.render("case-cabralMotors", {
     title: "Benova - Cabral Motors",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "A Benova traz uma loja com layout diferenciado e com visual moderno e totalmente customizado e também funcionalidades exclusivas para a Cabral Motor.",
     url: "/cabral-motors",
   });
 });
@@ -113,7 +113,7 @@ Router.get("/branco", (req, res) => {
   res.render("case-branco", {
     title: "Benova - Branco",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Benova concluiu o projeto VTEX IO para a Branco, trazendo um novo conceito visual para loja online, novas funcionalidades e gestão completa para o e-commerce",
     url: "/branco",
   });
 });
@@ -122,7 +122,7 @@ Router.get("/gmad", (req, res) => {
   res.render("case-gmad", {
     title: "Benova - GMAD",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Projeto Benova e GMAD, entregando uma loja de alta performance e rápido carregamento, design para uma navegação agradável e uma experiência focada no usuário.",
     url: "/gmad",
   });
 });
@@ -131,7 +131,7 @@ Router.get("/crocs", (req, res) => {
   res.render("case-crocs", {
     title: "Benova - Crocs",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "A Benova trouxe um layout totalmente customizado e diferente dentro da plataforma Mercado Shops, entregando um projeto superando as expectativas do cliente.",
     url: "/crocs",
   });
 });
@@ -140,7 +140,7 @@ Router.get("/dex", (req, res) => {
   res.render("case-dex", {
     title: "Benova - Dex",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "A Benova, com todo o seu Know-how em VTEX, além de um novo layout, criou e desenvolveu um aplicativo exclusivo de busca para o maior revendedor de peças Volvo.",
     url: "/dex",
   });
 });
@@ -149,7 +149,7 @@ Router.get("/uau-bobinex", (req, res) => {
   res.render("case-bobinex", {
     title: "Benova - Uau Bobinex",
     description:
-      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+      "Projeto VTEX IO para a UAU Bobinex, onde a Benova atuou de forma completa, entregando além de novo layout, novas aplicativos e gestão completa do e-commerce.",
     url: "/uau-bobinex",
   });
 });
