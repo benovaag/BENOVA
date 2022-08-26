@@ -1,0 +1,176 @@
+/* BANNER */
+.page-outsourcing .outsourcing-banner__image {
+  width: 100%;
+  filter: grayscale(1);
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-banner__image {
+    height: 185px;
+    object-fit: cover;
+  }
+}
+
+/* TEXTOS */
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-informations {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-informations {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.page-outsourcing .outsourcing-title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.page-outsourcing .outsourcing-title:after {
+  content: "";
+  width: 90%;
+  max-width: 675px;
+  display: block;
+  background: var(--secondary);
+}
+
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-title:after {
+    margin: 5px 0 20px 0;
+    height: 7px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-title:after {
+    margin: 5px 0 12px 0;
+    height: 3px;
+  }
+}
+
+.page-outsourcing .outsourcing-subtitle {
+  color: var(--primary);
+  font-weight: 100;
+}
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-subtitle {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-outsourcing .outsourcing-informations__items {
+  padding-top: 8px;
+}
+
+.page-outsourcing .outsourcing-informations__item {
+  list-style: disc;
+  color: var(--primary);
+  margin-left: 15px;
+  padding-bottom: 5px;
+}
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-informations__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-informations__item {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* BENEFICIOS */
+@media (min-width: 1026px) {
+  .outsourcing-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .outsourcing-benefits__item {
+    margin-bottom: 70px;
+    width: 40%;
+  }
+}
+@media (max-width: 1025px) {
+  .outsourcing-benefits__item {
+    margin-bottom: 70px;
+    width: 100%;
+  }
+}
+
+.page-outsourcing .outsourcing-benefits__title {
+  color: var(--primary);
+}
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-benefits__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-benefits__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.page-outsourcing .outsourcing-benefits__title:after {
+  content: "";
+  width: 90%;
+  max-width: 297px;
+  display: block;
+  background: var(--secondary);
+  height: 2px;
+}
+
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-benefits__title:after {
+    margin: 5px 0 20px 0;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-benefits__title:after {
+    margin: 5px 0 12px 0;
+  }
+}
+
+.page-outsourcing .outsourcing-benefits__text {
+  color: var(--primary);
+  font-weight: 100;
+}
+@media (min-width: 1026px) {
+  .page-outsourcing .outsourcing-benefits__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1025px) {
+  .page-outsourcing .outsourcing-benefits__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

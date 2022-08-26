@@ -19,6 +19,15 @@ Router.get("/benova", (req, res) => {
   });
 });
 
+Router.get("/outsourcing", (req, res) => {
+  res.render("outsourcing", {
+    title: "Benova - Outsourcing",
+    description:
+      "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
+    url: "/outsourcing",
+  });
+});
+
 Router.get("/servicos", (req, res) => {
   res.render("services", {
     title: "Benova - Serviços",
