@@ -1,12 +1,13 @@
 const express = require("express");
 const Router = express.Router();
+const Url    = "https://www.benova.ag";
 
 Router.get("/", (req, res) => {
   res.render("index", {
     title: "Benova - Gestão ponta a ponta do seu ecommerce",
     description:
       "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
-    url: "/",
+    url: Url,
   });
 });
 
@@ -15,7 +16,7 @@ Router.get("/benova", (req, res) => {
     title: "Benova - Gestão ponta a ponta do seu ecommerce",
     description:
       "Implantação e Evolução para Lojas Virtuais. Agência de e-commerce especialista em transformação de negócios digitais. Inicie a sua operação online conosco!",
-    url: "/",
+    url: Url+"/benova",
   });
 });
 
@@ -24,7 +25,7 @@ Router.get("/outsourcing", (req, res) => {
     title: "Benova - Outsourcing",
     description:
       "Terceirize serviços estratégicos com a Benova, diminua seus custos e melhore a eficiência de sua operação.",
-    url: "/outsourcing",
+    url: Url+"/outsourcing",
   });
 });
 
@@ -33,7 +34,7 @@ Router.get("/servicos", (req, res) => {
     title: "Benova - Serviços",
     description:
       "Gestão completa para o seu comércio digital, ou serviços modulares que se adaptam ao momento da sua empresa.",
-    url: "/servicos",
+    url: Url+"/servicos",
   });
 });
 
@@ -42,7 +43,7 @@ Router.get("/servicos/one-stop-shop", (req, res) => {
     title: "Benova - One-Stop Shop",
     description:
       "Desenvolver, controlar e otimizar a experiência do usuário de maneira inovadora e humanizada, são os principais pilares da estratégia do One-Stop Shop.",
-    url: "/servicos/one-stop-shop",
+    url: Url+"/servicos/one-stop-shop",
   });
 });
 
@@ -51,7 +52,7 @@ Router.get("/servicos/modular-management", (req, res) => {
     title: "Benova - Modular Management",
     description:
       "Customize as operações de seu negócio online com um conceito On Demand, onde você escolhe os serviços que mais se encaixam em sua estratégia digital.",
-    url: "/servicos/modular-management",
+    url: Url+"/servicos/modular-management",
   });
 });
 
@@ -60,7 +61,7 @@ Router.get("/servicos/start", (req, res) => {
     title: "Benova - Start",
     description:
       "Consultorias dedicadas para a evolução de sua operação digital.",
-    url: "/servicos/start",
+    url: Url+"/servicos/start",
   });
 });
 
@@ -69,7 +70,7 @@ Router.get("/servicos/deployment", (req, res) => {
     title: "Benova - Deployment",
     description:
       "Auxiliamos você a optar pela plataforma ideal para sua loja online, considerando Escabilidade, Facilidade, Segurança, Custo, Flexibilidade e Conformidade.",
-    url: "/servicos/deployment",
+    url: Url+"/servicos/deployment",
   });
 });
 
@@ -78,7 +79,7 @@ Router.get("/servicos/evolution", (req, res) => {
     title: "Benova - Evolution",
     description:
       "Dê mais um passo e evolua de forma integrada trazendo mais resultados ao seu negócio digital.",
-    url: "/servicos/evolution",
+    url: Url+"/servicos/evolution",
   });
 });
 
@@ -87,7 +88,7 @@ Router.get("/servicos/performance", (req, res) => {
     title: "Benova - Performance",
     description:
       "Consultorias dedicadas para a evolução de sua operação digital.",
-    url: "/servicos/performance",
+    url: Url+"/servicos/performance",
   });
 });
 
@@ -96,7 +97,7 @@ Router.get("/modelo-de-negocios", (req, res) => {
     title: "Benova - Modelo de Negócios",
     description:
       "Estruturamos como sua empresa cria, entrega e captura valor para o seu cliente.",
-    url: "/modelo-de-negocios",
+    url: Url+"/modelo-de-negocios",
   });
 });
 
@@ -105,7 +106,7 @@ Router.get("/cabral-motors", (req, res) => {
     title: "Benova - Cabral Motors",
     description:
       "A Benova traz uma loja com layout diferenciado e com visual moderno e totalmente customizado e também funcionalidades exclusivas para a Cabral Motor.",
-    url: "/cabral-motors",
+    url: Url+"/cabral-motors",
   });
 });
 
@@ -114,7 +115,7 @@ Router.get("/branco", (req, res) => {
     title: "Benova - Branco",
     description:
       "Benova concluiu o projeto VTEX IO para a Branco, trazendo um novo conceito visual para loja online, novas funcionalidades e gestão completa para o e-commerce",
-    url: "/branco",
+    url: Url+"/branco",
   });
 });
 
@@ -123,7 +124,7 @@ Router.get("/gmad", (req, res) => {
     title: "Benova - GMAD",
     description:
       "Projeto Benova e GMAD, entregando uma loja de alta performance e rápido carregamento, design para uma navegação agradável e uma experiência focada no usuário.",
-    url: "/gmad",
+    url: Url+"/gmad",
   });
 });
 
@@ -132,7 +133,7 @@ Router.get("/crocs", (req, res) => {
     title: "Benova - Crocs",
     description:
       "A Benova trouxe um layout totalmente customizado e diferente dentro da plataforma Mercado Shops, entregando um projeto superando as expectativas do cliente.",
-    url: "/crocs",
+    url: Url+"/crocs",
   });
 });
 
@@ -141,7 +142,7 @@ Router.get("/dex", (req, res) => {
     title: "Benova - Dex",
     description:
       "A Benova, com todo o seu Know-how em VTEX, além de um novo layout, criou e desenvolveu um aplicativo exclusivo de busca para o maior revendedor de peças Volvo.",
-    url: "/dex",
+    url: Url+"/dex",
   });
 });
 
@@ -150,7 +151,7 @@ Router.get("/uau-bobinex", (req, res) => {
     title: "Benova - Uau Bobinex",
     description:
       "Projeto VTEX IO para a UAU Bobinex, onde a Benova atuou de forma completa, entregando além de novo layout, novas aplicativos e gestão completa do e-commerce.",
-    url: "/uau-bobinex",
+    url: Url+"/uau-bobinex",
   });
 });
 

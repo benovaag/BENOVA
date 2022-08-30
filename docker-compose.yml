@@ -1,0 +1,22 @@
+version: "3.2"
+services:
+  node_LP:
+    image: node:14-alpine
+    container_name: novo_site
+    restart: always
+    ports:
+      - 3500:3500
+    volumes:
+      - .:/var/www/app
+    working_dir: "/var/www/app"
+    command: >
+      sh -c "
+         npm install -g npm &&
+         npm install &&
+         node index.js
+      "
+    logging:
+      driver: "json-file"
+      options:
+         max-size: "20m"
+         max-file: "5"
