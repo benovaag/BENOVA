@@ -1,4 +1,4 @@
-<section class="contact" id="form">
+<form class="contact" id="form" method="get" action="/" autocomplete="off">
     <div class="content">
         <div class="contact-column__text">
             <h2 class="contact-title">Comece agora e<br>acelere seu negócio digital.</h2>
@@ -9,13 +9,13 @@
 
         <div class="contact-column__form">
             <form class="form">
-                <input type="text" name="name" placeholder="Qual seu nome?" class="form-field form-field__required">                    
-                <input type="text" name="email" placeholder="Qual seu e-mail?" class="form-field form-field__required">
-                <input type="text" name="mobile_phone" placeholder="Celular" class="form-field form-field__required">
-                <input type="text" name="site" placeholder="Sua empresa" class="form-field form-field__required">
+                <input type="text" name="name" placeholder="Qual seu nome?*" required class="form-field form-field__required">                    
+                <input type="text" name="email" placeholder="Qual seu e-mail?*" required class="form-field form-field__required">
+                <input type="text" name="mobile_phone" placeholder="Celular*" required class="form-field form-field__required">
+                <input type="text" name="site" placeholder="Sua empresa*" required class="form-field form-field__required">
                 
-                <select name="mercado" class="form-field">
-                    <option value="Mercado que atua" disabled selected>Mercado que atua</option>
+                <select name="mercado" class="form-field" required>
+                    <option value="Mercado que atua" disabled selected>Mercado que atua*</option>
                     <option value="Alimentos e bebidas">Alimentos e bebidas</option>
                     <option value="Automotivo">Automotivo</option>
                     <option value="Brinquedos e games">Brinquedos e games</option>
@@ -38,8 +38,8 @@
                     <option value="Outros">Outros</option>
                 </select>
 
-                <select name="faturamento" class="form-field">
-                    <option value="Faturamento médio mensal" disabled selected>Faturamento médio mensal</option>
+                <select name="faturamento" class="form-field" required>
+                    <option value="Faturamento médio mensal" disabled selected>Faturamento médio mensal*</option>
                     <option value="R$0 a R$100.000">R$0 a R$100.000</option>
                     <option value="R$100.000 a R$250.000">R$100.000 a R$250.000</option>
                     <option value="R$250.000 a R$500.000">R$250.000 a R$500.000</option>
@@ -48,30 +48,45 @@
                     <option value="Acima de R$3MI">Acima de R$3MI</option>
                 </select>
 
-                <select name="porte" class="form-field">
-                    <option value="Porte da empresa" disabled selected>Porte da empresa</option>
+                <select name="porte" class="form-field" required>
+                    <option value="Porte da empresa" disabled selected>Porte da empresa*</option>
                     <option value="Até 9 funcionários">Até 9 funcionários</option>
                     <option value="De 10 a 49 funcionários">De 10 a 49 funcionários</option>
                     <option value="De 50 a 99 funcionários">De 50 a 99 funcionários</option>
                     <option value="100 ou mais funcionários">100 ou mais funcionários</option>
                 </select>
 
-                <select name="modelo" class="form-field">
-                    <option value="Modelo de negócio" disabled selected>Modelo de negócio</option>
+                <select name="modelo" class="form-field" required>
+                    <option value="Modelo de negócio" disabled selected>Modelo de negócio*</option>
                     <option value="B2B - Atacado">B2B - Atacado</option>
                     <option value="B2C - Varejo">B2C - Varejo</option>
                     <option value="B2B/B2C - Atacado/Varejo">B2B/B2C - Atacado/Varejo</option>
                 </select>
 
-                <textarea name="sobre" placeholder="Nos conte um pouco sobre o seu negócio" class="form-field__textarea form-field"></textarea>
+                <textarea name="sobre" placeholder="Nos conte um pouco sobre o seu negócio*" class="form-field__textarea form-field" required></textarea>
 
                 <!-- <input type="hidden" name="token_rdstation" value="5e9a5a07c6e2ca00cafea124b124be85"> -->
                 <input type="hidden" name="identificador" value="[Site] Fale com a Benova">
 
                 <div class="form-button">
-                    <button class="form-button__submit" type="submit" onclick="alert('Mensagem enviada com sucesso!')">Enviar</button>
+                    <button class="form-button__submit" type="submit">Enviar</button>
+
+                    <script>
+                        var form = document.querySelector("#form");
+
+                        form.addEventListener('submit', function(event) {
+                            if (!event.target.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                                alert("Preencha todos os campos.")
+                            } else {
+                                alert("Mensagem enviada com sucesso!")
+                            }
+                        });
+                    </script>
+
                 </div>
             </form>
         </div>
     </div>
-</section>
+</form>
