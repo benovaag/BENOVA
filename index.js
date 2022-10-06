@@ -17,6 +17,6 @@ app.use("/assets", express.static("assets"));
 // Configurando rotas
 app.use(Router);
 
-app.listen(3600, () => {
+app.listen(3500, () => {
   console.log("Servidor rodando!");
 });
