@@ -172,6 +172,26 @@ Router.get("/uau-bobinex", (req, res) => {
   });
 });
 
+Router.get("/politica-de-privacidade", (req, res) => {
+  res.render("politica-de-privacidade", {
+    title: "Benova - Política de Privacidade",
+    robots: '<meta name="robots" content="index">',
+    description:
+      "Política de Privacidade.",
+    url: Url + "/politica-de-privacidade",
+  });
+});
+
+Router.get("/termos-de-uso", (req, res) => {
+  res.render("termos-de-uso", {
+    title: "Benova - Termos de Uso",
+    robots: '<meta name="robots" content="index">',
+    description:
+      "Termos de uso.",
+    url: Url + "/termos-de-uso",
+  });
+});
+
 Router.get("/criar-demanda", (req, res) => {
   res.render("criar-demanda", {
     title: "Benova - Criar demanda",
