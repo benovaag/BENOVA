@@ -12,7 +12,7 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
-app.use("/assets", express.static("assets"));
+app.use(express.static("assets"));
 
 // Configurando rotas
 app.use(Router);
