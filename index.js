@@ -1,7 +1,11 @@
 const express = require("express");
 const Router = require("./routes.js");
 const handlebars = require("express-handlebars");
+const compression = require("compression");
 const app = express();
+
+// Configuração de compactação gzip
+app.use(compression());
 
 // Configurando o handlebars
 app.engine(
