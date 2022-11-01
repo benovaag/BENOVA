@@ -1,0 +1,37 @@
+{
+  "theme_color": "#68478d",
+  "background_color": "#68478d",
+  "display": "standalone",
+  "scope": "./criar-demanda",
+  "start_url": "./criar-demanda",
+  "name": "BENOVA\u00ae - Gest\u00e3o ponta a ponta do seu ecommerce",
+  "short_name": "Benova",
+  "description": "Implanta\u00e7\u00e3o e Evolu\u00e7\u00e3o para Lojas Virtuais. Ag\u00eancia de e-commerce especialista em transforma\u00e7\u00e3o de neg\u00f3cios digitais. Inicie a sua opera\u00e7\u00e3o online conosco!",
+  "icons": [
+      {
+          "src": "/images/pwa/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/images/pwa/icon-256x256.png",
+          "sizes": "256x256",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/images/pwa/icon-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/images/pwa/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+      }
+  ],
+  "splash_pages": null
+}
