@@ -86,6 +86,15 @@
   }
 }
 
+@media (max-width: 450px) {
+  .page-home .banner-main__image {
+    display: none;
+  }
+  .page-home .banner-main {
+    padding-bottom: 25px;
+  }
+}
+
 .page-home .banner-main__columns {
   display: flex;
   justify-content: space-between;
