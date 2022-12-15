@@ -4,9 +4,9 @@
 
     <!-- Primary Meta Tags -->
 
-    <link rel="manifest" href="/manifest.json">
+    {{!-- <link rel="manifest" href="/manifest.json"> --}}
     <meta name="theme-color" content="#f9f9f9">
-    <link rel="apple-touch-icon" href="/images/pwa/icon-192x192.png">
+    {{!-- <link rel="apple-touch-icon" href="/images/pwa/icon-192x192.png"> --}}
 
     <title>{{{title}}}</title>
     <meta charset="UTF-8">
@@ -47,6 +47,17 @@
     })(window,document,'script','dataLayer','GTM-5SDWPZ8');</script>
     <!-- End Google Tag Manager -->
 </head>
+<script>
+    /*if("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/pwa.js")
+        .then(function() {
+            console.log("ServiceWorker registrado")
+        })
+        .catch(function(){
+            console.log("Erro no registro do serviceWorker")
+        })
+    }*/
+</script>
 
 {{{body}}}
 

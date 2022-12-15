@@ -1,7 +1,7 @@
 version: "3.2"
 services:
   node_LP:
-    image: node:14-alpine
+    image: node:19-alpine
     container_name: novo_site
     restart: always
     ports:

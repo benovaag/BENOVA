@@ -2,7 +2,7 @@
   "theme_color": "#68478d",
   "background_color": "#68478d",
   "display": "standalone",
-  "scope": "./criar-demanda",
+  "scope": "./?utm=acesso-pelo-pwa",
   "start_url": "./criar-demanda",
   "name": "BENOVA\u00ae - Gest\u00e3o ponta a ponta do seu ecommerce",
   "short_name": "Benova",

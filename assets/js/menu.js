@@ -8,9 +8,7 @@ function openMenu() {
     document.querySelector(".menu-item").classList.add("exibeConteudo")
   }
   document.querySelector(".header").classList.toggle("header-open");
-
-
-  exibeConteudo
+  
 }
 
 function MouseOver(elem) {

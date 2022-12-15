@@ -1,17 +1,4 @@
 <body class="page-case">
-
-    <script>
-        if("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("/pwa.js")
-            .then(function() {
-                console.log("ServiceWorker registrado")
-            })
-            .catch(function(){
-                console.log("Erro no registro do serviceWorker")
-            })
-        }
-    </script>
-
     <link rel="stylesheet" type="text/css" href="/css/criar-demanda.css">
 
 {{>header}}
@@ -24,11 +11,22 @@
 
 <section class="criar-demanda">
     <iframe class="clickup-embed clickup-dynamic-height"
-    src="https://forms.clickup.com/36935390/f/1375py-1723/8VFEI59C8C01OORZHQ" 
+    src="https://forms.clickup.com/36935390/f/1375py-1723/8VFEI59C8C01OORZHQ"
     onwheel="" width="100%" height="100%" style="background: transparent;border: none">
     </iframe>
-    <script async src="https://app-cdn.clickup.com/js/forms-embed/v1.js"></script>
+    <!-- <script async src="https://app-cdn.clickup.com/js/forms-embed/v1.js"></script> -->
 </section>
+
+<script type="text/javascript">
+window.addEventListener("DOMContentLoaded", ()=>{
+
+  //Adiciona script do clickUp
+  var iframeScript = document.createElement('script');
+  iframeScript.src = 'https://app-cdn.clickup.com/assets/js/forms-embed/v1.js';
+  document.querySelector(".criar-demanda").appendChild(iframeScript);
+
+})
+</script>
 
 {{>footer}}
 </body>

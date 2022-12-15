@@ -5,7 +5,9 @@ const compression = require("compression");
 const app = express();
 
 // Configuração de compactação gzip
-app.use(compression());
+app.use(compression({
+  level: 6
+}));
 
 // Configurando o handlebars
 app.engine(
